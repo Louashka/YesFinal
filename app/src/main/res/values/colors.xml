@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#c6cfdb</color>
+    <color name="actionbar_background">#ee7e07</color>
+    <color name="menu_text">#5a6e83</color>
+    <color name="menu_tabs">#eaeaea</color>
+    <color name="menu_tabs_line">#dfdfdf</color>
+    <color name="grid_background">#f1f1f1</color>
+    <color name="profile_text">#707c96</color>
+    <color name="refresh_image">#62aec2</color>
+    <color name="button_border">#ffcb00</color>
+    <color name="size_border">#797979</color>
+    <color name="users_tab_search">#c6cacd</color>
+    <color name="users_tabtext_search">#959595</color>
+    <color name="users_text_search">#4f4f4f</color>
+    <color name="apptheme_color">#7bba00</color>
+    <color name="line_color">#c6c6c6</color>
+    <color name="search_background">#d5c4b4</color>
+    <color name="status_bar_color">#ef8009</color>
+    <color name="reviews_username_border_color">#7b889b</color>
+    <color name="reviews_button_background">#e2e5ea</color>
+    <color name="rating_text_border">#b0b0b0</color>
+    <color name="appthemeblack_color">#000000</color>
+    <color name="reg_text_bg">#e2e6e9</color>
+    <color name="appthemeblue_color">#0064a4</color>
+    <color name="disabled_item">#A4A4A4</color>
+    <color name="settings_left_column">#cddce8</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageViewGrid"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewActionGrid"
+        android:layout_alignStart="@+id/textViewActionGrid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Акция"
+        android:id="@+id/textViewActionGrid"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Бесплатная доставка"
+        android:id="@+id/textViewFreeDeliverGrid"
+        android:layout_below="@+id/textViewActionGrid"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-30%"
+        android:id="@+id/textViewDiscountGrid"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_above="@+id/textViewFreeDeliverGrid"
+        android:layout_alignRight="@+id/imageViewGrid"
+        android:layout_alignEnd="@+id/imageViewGrid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Бронь"
+        android:id="@+id/textViewOrderGrid"
+        android:layout_below="@+id/textViewDiscountGrid"
+        android:layout_alignRight="@+id/textViewDiscountGrid"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продано"
+        android:id="@+id/textViewNumOfSelledGrid"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/textViewOrderGrid"
+        android:layout_alignRight="@+id/textViewOrderGrid"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSearchResultTitle"
+        android:text="Title"
+        android:id="@+id/textViewTitleGrid"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Price"
+        android:id="@+id/textViewPriceGrid"
+        android:layout_below="@+id/textViewTitleGrid"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Last Price"
+        android:id="@+id/textViewLastPriceGrid"
+        android:layout_below="@+id/textViewPriceGrid"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:alpha="0.5"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewTimeGrid"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:layout_alignTop="@+id/textViewPriceGrid"
+        android:layout_alignRight="@+id/textViewNumOfSelledGrid"
+        android:layout_alignEnd="@+id/textViewNumOfSelledGrid" />
+
+</RelativeLayout>
+
+

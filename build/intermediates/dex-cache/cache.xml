@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\lou\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.5.2\22b4c53dd9b6761024258de8f9240c3dce6ea368\httpmime-4.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="22b4c53dd9b6761024258de8f9240c3dce6ea368">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\httpmime-4.5.2-f3534bf38304482e5840f50cfd1db063c5b481b6.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\classes-d4a8d1921d795039e9b5c60906adad56dfd70f69.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\Yes4\yandexmapkitlibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="05edbb53be8e6460d4f20c36f196a14fd8bc7269">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\classes-5fc888057a40e9323d2026febed282e3e61b323a.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\Yes4\pulltorefresh-and-loadmore\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85d8179ae67c5c8e56d110b37c75a61952cae31d">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\classes-67cc81d76e57a2474d6f3440289a9a396c2b0aa2.jar" />
+    </item>
+    <item
+        jar="C:\Users\lou\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.4\b31526a230871fbe285fbcbe2813f9c0839ae9b0\httpcore-4.4.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b31526a230871fbe285fbcbe2813f9c0839ae9b0">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\httpcore-4.4.4-6dd9f86985ced30808d256c947dec453b2cc50f5.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-f8265f81bd04c5f37d3a4c5f745b26f73d79616a.jar" />
+    </item>
+    <item
+        jar="C:\Users\lou\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-2b09593de1f843a2ee5c9bc05ae089db44430573.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\Yes4\yandexmapkitlibrary\unspecified\jars\libs\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fafc78681412f85865274d9163d1eab0ef61866d">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\classes-ea849fb2769a0593a0f1cad2cdc81d1b544db7a1.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\classes-3c8747f9684d2702423b6a7341b0e88c4c389761.jar" />
+    </item>
+    <item
+        jar="E:\Downloads\Yes4\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="E:\Downloads\Yes4\app\build\intermediates\pre-dexed\debug\classes-11d8d2bbe2126f041ba0e8a04e8a3541c4cff978.jar" />
+    </item>
+
+</items>

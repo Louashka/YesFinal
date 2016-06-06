@@ -1,0 +1,338 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    tools:context="com.tataev.yes.ProfileSettings"
+    android:scrollbarSize="4dp"
+    android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+    android:background="@drawable/registration_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageLogoSettings"
+            android:src="@drawable/reg_logo"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/securitySettings"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/securitySettings"
+                    android:background="@color/settings_left_column"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toStartOf="@+id/rowBirthdaySettings"
+                    android:layout_toLeftOf="@+id/rowBirthdaySettings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:id="@+id/nameSettings"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignRight="@+id/birthdaySettings"
+                    android:layout_alignEnd="@+id/birthdaySettings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignBottom="@+id/editNameSettings"
+                    android:layout_alignTop="@+id/editNameSettings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surname"
+                    android:id="@+id/surnameSettings"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignRight="@+id/birthdaySettings"
+                    android:layout_alignEnd="@+id/birthdaySettings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignBottom="@+id/editSurnameSettings"
+                    android:layout_alignTop="@+id/editSurnameSettings"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthday"
+                    android:id="@+id/birthdaySettings"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/surnameSettings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignBottom="@+id/rowBirthdaySettings"
+                    android:layout_alignTop="@+id/rowBirthdaySettings"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reg_gender"
+                    android:id="@+id/genderSettings"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/birthdaySettings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/birthdaySettings"
+                    android:layout_alignEnd="@+id/birthdaySettings"
+                    android:gravity="center_vertical"
+                    android:layout_alignBottom="@+id/radioGroupSettings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:id="@+id/addressSettings"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/birthdaySettings"
+                    android:layout_alignEnd="@+id/birthdaySettings"
+                    android:gravity="center_vertical"
+                    android:layout_alignBottom="@+id/editAddressSettings"
+                    android:layout_alignTop="@+id/editAddressSettings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:id="@+id/emailSettings"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/birthdaySettings"
+                    android:layout_alignEnd="@+id/birthdaySettings"
+                    android:gravity="center_vertical"
+                    android:layout_alignBottom="@+id/editEmailSettings"
+                    android:layout_alignTop="@+id/editEmailSettings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/security"
+                    android:id="@+id/securitySettings"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/birthdaySettings"
+                    android:layout_alignEnd="@+id/birthdaySettings"
+                    android:gravity="center_vertical"
+                    android:layout_alignBottom="@+id/editCodeSettings"
+                    android:layout_alignTop="@+id/editCodeSettings" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editNameSettings"
+                    android:background="@drawable/profile_border"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:textColorHint="@color/profile_text"
+                    android:inputType="text"
+                    android:layout_alignLeft="@+id/rowBirthdaySettings"
+                    android:layout_alignStart="@+id/rowBirthdaySettings" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editSurnameSettings"
+                    android:background="@drawable/profile_border"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColorHint="@color/profile_text"
+                    android:inputType="text"
+                    android:layout_below="@+id/editNameSettings"
+                    android:layout_alignLeft="@+id/editNameSettings"
+                    android:layout_alignStart="@+id/editNameSettings" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rowBirthdaySettings"
+                    android:layout_below="@+id/editSurnameSettings"
+                    android:layout_toRightOf="@+id/birthdaySettings"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/daySettings"
+                        android:background="@drawable/profile_border"
+                        android:textColorHint="@color/profile_text"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:layout_weight="3"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerMonthsSettings"
+                        android:background="@drawable/profile_border"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:entries="@array/months"
+                        android:padding="5dp"
+                        android:layout_weight="2"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yearSettings"
+                        android:background="@drawable/profile_border"
+                        android:textColorHint="@color/profile_text"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:layout_weight="3"/>
+
+                </TableRow>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/radioGroupSettings"
+                    android:layout_below="@+id/rowBirthdaySettings"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignLeft="@+id/rowBirthdaySettings"
+                    android:layout_alignStart="@+id/rowBirthdaySettings">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_male"
+                        android:id="@+id/radioMaleSetting"
+                        style="@style/RadioButtonAppThemeBlue"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_female"
+                        android:id="@+id/radioFemaleSettings"
+                        style="@style/RadioButtonAppThemeBlue"/>
+
+                </RadioGroup>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editAddressSettings"
+                    android:background="@drawable/profile_border"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColorHint="@color/profile_text"
+                    android:layout_below="@+id/radioGroupSettings"
+                    android:layout_alignLeft="@+id/radioGroupSettings"
+                    android:layout_alignStart="@+id/radioGroupSettings" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editEmailSettings"
+                    android:background="@drawable/profile_border"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColorHint="@color/profile_text"
+                    android:layout_below="@+id/editAddressSettings"
+                    android:layout_alignLeft="@+id/editAddressSettings"
+                    android:layout_alignStart="@+id/editAddressSettings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCodeSettings"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_border"
+                    android:layout_alignBottom="@+id/editCodeSettings"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/code"
+                    android:textColor="@color/profile_text"
+                    android:layout_alignTop="@+id/editCodeSettings"
+                    android:layout_alignLeft="@+id/editEmailSettings"
+                    android:layout_alignStart="@+id/editEmailSettings" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editCodeSettings"
+                    android:hint="@string/enter_code"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_border"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/profile_text"
+                    android:layout_toRightOf="@+id/textCodeSettings"
+                    android:layout_below="@+id/editEmailSettings"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_history"
+                android:id="@+id/checkBoxShowHistorySettings"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_recomendations"
+                android:id="@+id/checkShowRecomSettings"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/buttonSave"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/reg_button"
+            android:layout_marginBottom="15dp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.tataev.appyes.fragments.Discussions">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchViewDiscussions"
+        android:searchIcon="@drawable/ic_search"
+        android:voiceIcon="@drawable/ic_search_mic"
+        android:background="@drawable/view_border"
+        android:layout_margin="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/menu_tabs_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/menu_tabs"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/menu_discuss_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/yes_second_menu"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/menu_text"
+            android:textAllCaps="true"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/nearby_discuss_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/navigation_second_menu"
+            android:gravity="center"
+            android:text="@string/nearby"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/novelty_discuss_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/novels_second_menu"
+            android:gravity="center"
+            android:text="@string/novelty"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/favor_discuss_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/favor_second_menu"
+            android:gravity="center"
+            android:text="@string/favorites"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/reservation_discuss_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/reservation_secong_menu"
+            android:gravity="center"
+            android:text="@string/reservation"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/categories_discuss_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/categ_second_menu"
+            android:gravity="center"
+            android:text="@string/categories"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/menu_tabs_line" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewDiscuss"
+        android:background="@color/grid_background"
+        android:paddingTop="10dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:dividerHeight="0dp"
+        android:divider="@color/grid_background" />
+
+</LinearLayout>

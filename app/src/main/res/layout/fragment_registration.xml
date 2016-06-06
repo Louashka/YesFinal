@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    tools:context="com.tataev.yes.Registration"
+    android:scrollbarSize="4dp"
+    android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+    android:background="@drawable/registration_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageRegLogo"
+            android:src="@drawable/reg_logo"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editRegLogin"
+                android:background="@drawable/profile_border"
+                android:hint="@string/login"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:textColorHint="@color/profile_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editRegPassword"
+                android:background="@drawable/profile_border"
+                android:hint="@string/reg_password"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:textColorHint="@color/profile_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editRegRepeatPswd"
+                android:background="@drawable/profile_border"
+                android:hint="@string/repeat_pswd"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:textColorHint="@color/profile_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editRegEmail"
+                android:background="@drawable/profile_border"
+                android:hint="@string/mail"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:textColorHint="@color/profile_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/profile_text"
+                android:id="@+id/regFirstLine" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_history"
+                android:id="@+id/checkBoxShowHistory"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_recomendations"
+                android:id="@+id/checkShowRecom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/profile_text"
+                android:id="@+id/regSecondLine" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agreement"
+                android:id="@+id/checkBoxConfReg"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:id="@+id/buttonReg"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:background="@drawable/reg_button" />
+    </LinearLayout>
+
+</ScrollView>

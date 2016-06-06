@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppYes="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/main_background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_border"
+        android:orientation="horizontal" >
+
+        <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+
+            tools:layout="@layout/fragment_search"
+            android:id="@+id/fragserch"  />
+
+    </LinearLayout>
+
+
+    <!--
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view_main"
+        android:searchIcon="@drawable/ic_search_main"
+        android:voiceIcon="@drawable/ic_search_main_mic"
+        android:background="@drawable/search_border"
+        android:clickable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" />
+-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/firstMenuRow">
+
+                <TextView
+                    android:id="@+id/reviews_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/reviews"
+                    android:gravity="center"
+                    android:text="@string/reviews"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/novelty_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/novels"
+                    android:gravity="center"
+                    android:text="@string/novelty"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/profile_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/profile"
+                    android:gravity="center"
+                    android:text="@string/profile"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/SecondMenuRow">
+
+                <TextView
+                    android:id="@+id/users_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/users"
+                    android:gravity="center"
+                    android:text="@string/users"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/categories_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/categories"
+                    android:gravity="center"
+                    android:text="@string/categories"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rating_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/rating"
+                    android:gravity="center"
+                    android:text="@string/rating"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/ThirdMenuRow">
+
+                <TextView
+                    android:id="@+id/discuss_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/discussions"
+                    android:gravity="center"
+                    android:text="@string/discussions"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/reservation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/reservation"
+                    android:gravity="center"
+                    android:text="@string/reservation"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/abProg_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/about_prog"
+                    android:gravity="center"
+                    android:text="@string/about_prog"
+                    android:textAllCaps="true"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

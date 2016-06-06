@@ -1,0 +1,729 @@
+Index: app/src/main/java/com/tataev/appyes/fragments/SearchFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tataev/appyes/fragments/SearchFragment.java	(date 1462604942000)
++++ app/src/main/java/com/tataev/appyes/fragments/SearchFragment.java	(revision )
+@@ -78,6 +78,12 @@
+         search_view_main.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
+         search_view_main.setIconifiedByDefault(false);
+         search_view_main.setOnQueryTextListener(this);
++        search_view_main.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                search_view_main.onActionViewExpanded();
++            }
++        });
+ 
+ 
+ 
+Index: app/src/main/java/com/tataev/appyes/fragments/Favourites.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tataev/appyes/fragments/Favourites.java	(date 1462604942000)
++++ app/src/main/java/com/tataev/appyes/fragments/Favourites.java	(revision )
+@@ -1,6 +1,6 @@
+ package com.tataev.appyes.fragments;
+ 
+-import android.app.Activity;
++import android.content.Intent;
+ import android.net.Uri;
+ import android.os.Bundle;
+ import android.support.v4.app.Fragment;
+@@ -81,7 +81,7 @@
+         View rootView = inflater.inflate(R.layout.fragment_favourites, container, false);
+         ((MainActivity)getActivity()).getSupportActionBar().setTitle("Избранное");
+ 
+-        Defaults.setSearchViewStyle(R.id.searchViewFavourites, rootView, getActivity());
++      //  Defaults.setSearchViewStyle(R.id.searchViewFavourites, rootView, getActivity());
+ 
+         //Initialize tab menu icons
+         menu_favor_tab = (TextView)rootView.findViewById(R.id.menu_favor_tab);
+@@ -90,7 +90,7 @@
+         favor_favor_tab = (TextView)rootView.findViewById(R.id.favor_favor_tab);
+         reservation_favor_tab = (TextView)rootView.findViewById(R.id.reservation_favor_tab);
+         categories_favor_tab = (TextView)rootView.findViewById(R.id.categories_favor_tab);
+-        search_view_main = (SearchView)rootView.findViewById(R.id.searchViewFavourites);
++     //   search_view_main = (SearchView)rootView.findViewById(R.id.searchViewFavourites);
+ 
+         // Set OnClickListener to menu icons
+         menu_favor_tab.setOnClickListener(this);
+@@ -99,7 +99,7 @@
+         favor_favor_tab.setOnClickListener(this);
+         reservation_favor_tab.setOnClickListener(this);
+         categories_favor_tab.setOnClickListener(this);
+-        search_view_main.setOnClickListener(this);
++     //   search_view_main.setOnClickListener(this);
+ 
+         return rootView;
+     }
+@@ -119,8 +119,14 @@
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+             case R.id.nearby_favor_tab:
+-                fragment = new Nearby();
+-                Defaults.replaceFragment(fragment, getActivity());
++              //  fragment = new Nearby();
++               // Defaults.replaceFragment(fragment, getActivity());
++                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
++                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
++                mapIntent.setPackage("com.google.android.apps.maps");
++                if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
++                    startActivity(mapIntent);
++                }
+                 break;
+             case R.id.novelty_favor_tab:
+                 fragment = new Novelty();
+@@ -138,9 +144,9 @@
+                 fragment = new Categories();
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+-            case R.id.searchViewFavourites:
+-                search_view_main.onActionViewExpanded();
+-                break;
++         //   case R.id.searchViewFavourites:
++            //    search_view_main.onActionViewExpanded();
++            //    break;
+             default:
+                 break;
+         }
+Index: app/src/main/java/com/tataev/appyes/fragments/Categories.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tataev/appyes/fragments/Categories.java	(date 1462604942000)
++++ app/src/main/java/com/tataev/appyes/fragments/Categories.java	(revision )
+@@ -1,5 +1,6 @@
+ package com.tataev.appyes.fragments;
+ 
++import android.content.Intent;
+ import android.net.Uri;
+ import android.os.Bundle;
+ import android.support.v4.app.Fragment;
+@@ -141,8 +142,14 @@
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+             case R.id.novelty_categ_tab:
+-                fragment = new Novelty();
+-                Defaults.replaceFragment(fragment, getActivity());
++             //   fragment = new Novelty();
++              //  Defaults.replaceFragment(fragment, getActivity());
++                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
++                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
++                mapIntent.setPackage("com.google.android.apps.maps");
++                if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
++                    startActivity(mapIntent);
++                }
+                 break;
+             case R.id.favor_categ_tab:
+                 fragment = new Favourites();
+Index: app/src/main/res/layout/fragment_menu_items.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_menu_items.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_menu_items.xml	(revision )
+@@ -8,11 +8,22 @@
+     android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
+     tools:context=".MainActivity">
+ 
+-<fragment android:name="com.tataev.appyes.fragments.SearchFragment"
++    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    android:layout_height="wrap_content"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:background="@drawable/search_border"
++        android:orientation="horizontal" >
++
++        <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
++            android:layout_width="match_parent"
++            android:layout_height="51dp"
++
+-    tools:layout="@layout/fragment_search"
+-    android:id="@+id/fragserch"  />
++            tools:layout="@layout/fragment_search"
++            android:id="@+id/fragserch"  />
++
++    </LinearLayout>
++
++
+     <!--
+     <SearchView
+         android:layout_width="match_parent"
+Index: app/src/main/res/layout/fragment_novelty.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_novelty.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_novelty.xml	(revision )
+@@ -6,6 +6,12 @@
+     tools:context="com.tataev.yes.Reviews"
+     android:background="#ffffff">
+ 
++    <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        tools:layout="@layout/fragment_search"
++        android:id="@+id/frag1"  />
++<!--
+     <SearchView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+@@ -14,7 +20,7 @@
+         android:voiceIcon="@drawable/ic_search_mic"
+         android:background="@drawable/view_border"
+         android:layout_margin="5dp" />
+-
++-->
+     <LinearLayout
+         android:id="@+id/nov_top_line"
+         android:orientation="horizontal"
+Index: app/src/main/res/layout/fragment_search.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_search.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_search.xml	(revision )
+@@ -2,6 +2,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+     tools:context="com.tataev.appyes.fragments.SearchFragment">
+ 
+     <!-- TODO: Update blank fragment layout -->
+@@ -11,12 +12,13 @@
+         android:id="@+id/search_view_main"
+         android:searchIcon="@drawable/ic_search_main"
+         android:voiceIcon="@drawable/ic_search_main_mic"
+-   android:background="@color/white"
+-        android:clickable="true"
++
+         android:layout_centerHorizontal="true"
++        android:clickable="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="5dp"
+-        android:layout_marginBottom="5dp" />
++        android:layout_marginBottom="5dp"
++       android:focusable="true" />
+     <!--    android:background="@drawable/search_border"-->
+ </FrameLayout>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1462604942000)
++++ .idea/misc.xml	(revision )
+@@ -1,5 +1,32 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="EntryPointsManager">
++    <entry_points version="2.0" />
++  </component>
++  <component name="NullableNotNullManager">
++    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
++    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
++    <option name="myNullables">
++      <value>
++        <list size="4">
++          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
++          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
++          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
++          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
++        </list>
++      </value>
++    </option>
++    <option name="myNotNulls">
++      <value>
++        <list size="4">
++          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
++          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
++          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
++          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
++        </list>
++      </value>
++    </option>
++  </component>
+   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+     <OptionsSetting value="true" id="Add" />
+     <OptionsSetting value="true" id="Remove" />
+@@ -10,7 +37,7 @@
+     <ConfirmationsSetting value="0" id="Add" />
+     <ConfirmationsSetting value="0" id="Remove" />
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(date 1462604942000)
++++ app/build.gradle	(revision )
+@@ -44,3 +44,4 @@
+ }
+ 
+ 
++
+Index: app/src/main/res/layout/fragment_favourites.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_favourites.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_favourites.xml	(revision )
+@@ -6,6 +6,12 @@
+     android:background="#ffffff"
+     tools:context="com.tataev.appyes.fragments.Favourites">
+ 
++    <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        tools:layout="@layout/fragment_search"
++        android:id="@+id/frag1"  />
++<!--
+     <SearchView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+@@ -14,7 +20,7 @@
+         android:voiceIcon="@drawable/ic_search_mic"
+         android:background="@drawable/view_border"
+         android:layout_margin="5dp" />
+-
++-->
+     <LinearLayout
+         android:id="@+id/favor_top_line"
+         android:orientation="horizontal"
+Index: app/src/main/res/layout/fragment_categories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_categories.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_categories.xml	(revision )
+@@ -10,7 +10,7 @@
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         tools:layout="@layout/fragment_search"
+-        android:id="@+id/fragserch"  />
++        android:id="@+id/frag1"  />
+ 
+  <!--   <SearchView
+         android:layout_width="match_parent"
+@@ -57,6 +57,8 @@
+             android:layout_weight="1"
+             android:background="@color/actionbar_background" />
+     </LinearLayout>
++
++
+ 
+     <LinearLayout
+         android:id="@+id/categ_tab"
+Index: app/src/main/java/com/tataev/appyes/fragments/Reservation.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tataev/appyes/fragments/Reservation.java	(date 1462604942000)
++++ app/src/main/java/com/tataev/appyes/fragments/Reservation.java	(revision )
+@@ -1,5 +1,6 @@
+ package com.tataev.appyes.fragments;
+ 
++import android.content.Intent;
+ import android.net.Uri;
+ import android.os.Bundle;
+ import android.support.v4.app.Fragment;
+@@ -84,7 +85,7 @@
+         View rootView = inflater.inflate(R.layout.fragment_reservation, container, false);
+         ((MainActivity)getActivity()).getSupportActionBar().setTitle("Бронирование");
+ 
+-        Defaults.setSearchViewStyle(R.id.searchViewReservation, rootView, getActivity());
++       // Defaults.setSearchViewStyle(R.id.searchViewReservation, rootView, getActivity());
+ 
+         //Initialize tab menu icons
+         menu_reserv_tab = (TextView)rootView.findViewById(R.id.menu_reserv_tab);
+@@ -94,7 +95,7 @@
+         reservation_reserv_tab = (TextView)rootView.findViewById(R.id.reservation_reserv_tab);
+         categories_reserv_tab = (TextView)rootView.findViewById(R.id.categories_reserv_tab);
+         listViewReserv = (ListView)rootView.findViewById(R.id.listViewReserv);
+-        search_view_main = (SearchView)rootView.findViewById(R.id.searchViewReservation);
++     //   search_view_main = (SearchView)rootView.findViewById(R.id.searchViewReservation);
+ 
+         // Set OnClickListener to menu icons
+         menu_reserv_tab.setOnClickListener(this);
+@@ -103,7 +104,7 @@
+         favor_reserv_tab.setOnClickListener(this);
+         reservation_reserv_tab.setOnClickListener(this);
+         categories_reserv_tab.setOnClickListener(this);
+-        search_view_main.setOnClickListener(this);
++    //    search_view_main.setOnClickListener(this);
+ 
+         listViewReserv.setAdapter(new ReservationAdapter(getActivity()));
+         listViewReserv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+@@ -155,8 +156,14 @@
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+             case R.id.nearby_reserv_tab:
+-                fragment = new Nearby();
+-                Defaults.replaceFragment(fragment, getActivity());
++               // fragment = new Nearby();
++              //  Defaults.replaceFragment(fragment, getActivity());
++                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
++                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
++                mapIntent.setPackage("com.google.android.apps.maps");
++                if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
++                    startActivity(mapIntent);
++                }
+                 break;
+             case R.id.novelty_reserv_tab:
+                 fragment = new Novelty();
+@@ -174,9 +181,9 @@
+                 fragment = new Categories();
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+-            case R.id.searchViewReservation:
+-                search_view_main.onActionViewExpanded();
+-                break;
++          //  case R.id.searchViewReservation:
++           //     search_view_main.onActionViewExpanded();
++           //     break;
+             default:
+                 break;
+         }
+Index: app/app.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/app.iml	(date 1462604942000)
++++ app/app.iml	(revision )
+@@ -87,8 +87,8 @@
+     <orderEntry type="library" exported="" name="httpmime-4.5.2" level="project" />
+     <orderEntry type="library" exported="" name="library-aar-1.0.0" level="project" />
+     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
+-    <orderEntry type="library" exported="" name="httpcore-4.4.4" level="project" />
+     <orderEntry type="library" exported="" name="support-annotations-22.2.1" level="project" />
++    <orderEntry type="library" exported="" name="httpcore-4.4.4" level="project" />
+     <orderEntry type="library" exported="" name="appcompat-v7-22.2.1" level="project" />
+     <orderEntry type="module" module-name="pulltorefresh-and-loadmore" exported="" />
+     <orderEntry type="module" module-name="yandexmapkitlibrary" exported="" />
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_reservation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_reservation.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_reservation.xml	(revision )
+@@ -6,15 +6,21 @@
+     android:background="#ffffff"
+     tools:context="com.tataev.appyes.fragments.Reservation">
+ 
+-    <SearchView
++    <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
++        tools:layout="@layout/fragment_search"
++        android:id="@+id/frag1"  />
++
++ <!--   <SearchView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
+         android:id="@+id/searchViewReservation"
+         android:searchIcon="@drawable/ic_search"
+         android:voiceIcon="@drawable/ic_search_mic"
+         android:background="@drawable/view_border"
+         android:layout_margin="5dp" />
+-
++-->
+     <LinearLayout
+         android:id="@+id/reserv_top_line"
+         android:orientation="horizontal"
+@@ -51,8 +57,10 @@
+             android:layout_weight="1"
+             android:background="@color/menu_tabs_line" />
+     </LinearLayout>
++
++
+ 
+-    <LinearLayout
++   <LinearLayout
+         android:id="@+id/reserv_tab"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+Index: app/src/main/java/com/tataev/appyes/fragments/Novelty.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tataev/appyes/fragments/Novelty.java	(date 1462604942000)
++++ app/src/main/java/com/tataev/appyes/fragments/Novelty.java	(revision )
+@@ -1,7 +1,6 @@
+ package com.tataev.appyes.fragments;
+ 
+-import android.app.SearchManager;
+-import android.content.Context;
++import android.content.Intent;
+ import android.net.Uri;
+ import android.os.Bundle;
+ import android.support.v4.app.Fragment;
+@@ -11,7 +10,6 @@
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+-import android.widget.ListView;
+ import android.widget.SearchView;
+ import android.widget.TextView;
+ 
+@@ -91,7 +89,7 @@
+         View rootView = inflater.inflate(R.layout.fragment_novelty, container, false);
+         ((MainActivity)getActivity()).getSupportActionBar().setTitle("Новинки");
+ 
+-        Defaults.setSearchViewStyle(R.id.searchViewNovelty, rootView, getActivity());
++       // Defaults.setSearchViewStyle(R.id.searchViewNovelty, rootView, getActivity());
+ 
+         //Initialize tab menu icons
+         menu_nov_tab = (TextView)rootView.findViewById(R.id.menu_nov_tab);
+@@ -100,7 +98,7 @@
+         favor_nov_tab = (TextView)rootView.findViewById(R.id.favor_nov_tab);
+         reservation_nov_tab = (TextView)rootView.findViewById(R.id.reservation_nov_tab);
+         categories_nov_tab = (TextView)rootView.findViewById(R.id.categories_nov_tab);
+-        search_view_main = (SearchView)rootView.findViewById(R.id.searchViewNovelty);
++      //  search_view_main = (SearchView)rootView.findViewById(R.id.searchViewNovelty);
+ 
+         PagerTabStrip pagerTabStrip = (PagerTabStrip) rootView.findViewById(R.id.pager_tab_strip);
+         pagerTabStrip.setTabIndicatorColor(getActivity().getResources().getColor(R.color.actionbar_background));
+@@ -113,7 +111,7 @@
+         favor_nov_tab.setOnClickListener(this);
+         reservation_nov_tab.setOnClickListener(this);
+         categories_nov_tab.setOnClickListener(this);
+-        search_view_main.setOnClickListener(this);
++       // search_view_main.setOnClickListener(this);
+ 
+         return rootView;
+     }
+@@ -140,8 +138,14 @@
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+             case R.id.nearby_nov_tab:
+-                fragment = new Nearby();
+-                Defaults.replaceFragment(fragment, getActivity());
++             //   fragment = new Nearby();
++              //  Defaults.replaceFragment(fragment, getActivity());
++                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
++                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
++                mapIntent.setPackage("com.google.android.apps.maps");
++                if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
++                    startActivity(mapIntent);
++                }
+                 break;
+             case R.id.novelty_nov_tab:
+                 fragment = new Novelty();
+@@ -159,9 +163,9 @@
+                 fragment = new Categories();
+                 Defaults.replaceFragment(fragment, getActivity());
+                 break;
+-            case R.id.searchViewNovelty:
+-                search_view_main.onActionViewExpanded();
+-                break;
++          //  case R.id.searchViewNovelty:
++               // search_view_main.onActionViewExpanded();
++              //  break;
+             default:
+                 break;
+         }
+Index: app/src/main/res/layout/fragment_products_list.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_products_list.xml	(date 1462604942000)
++++ app/src/main/res/layout/fragment_products_list.xml	(revision )
+@@ -60,90 +60,96 @@
+ 
+     </LinearLayout>
+ 
++    <fragment android:name="com.tataev.appyes.fragments.Categories_items"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        tools:layout="@layout/fragment_categories_items"
++        android:id="@+id/frag2"  />
++    <!--
+-    <LinearLayout
+-        android:id="@+id/categ_tab"
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:orientation="horizontal"
+-        android:background="@color/menu_tabs"
+-        android:paddingTop="6dp"
+-        android:paddingBottom="6dp">
++        <LinearLayout
++            android:id="@+id/categ_tab"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal"
++            android:background="@color/menu_tabs"
++            android:paddingTop="6dp"
++            android:paddingBottom="6dp">
+ 
+-        <TextView
+-            android:id="@+id/menu_categ_tab"
+-            android:layout_width="0dp"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="1dp"
+-            android:layout_weight="1"
+-            android:drawableTop="@drawable/yes_second_menu"
+-            android:gravity="center"
+-            android:text="@string/app_name"
+-            android:textColor="@color/menu_text"
+-            android:textAllCaps="true"
+-            android:textSize="10sp"/>
++            <TextView
++                android:id="@+id/menu_categ_tab"
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_margin="1dp"
++                android:layout_weight="1"
++                android:drawableTop="@drawable/yes_second_menu"
++                android:gravity="center"
++                android:text="@string/app_name"
++                android:textColor="@color/menu_text"
++                android:textAllCaps="true"
++                android:textSize="10sp"/>
+ 
+-        <TextView
+-            android:id="@+id/nearby_categ_tab"
+-            android:layout_width="0dp"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="1dp"
+-            android:layout_weight="1"
+-            android:drawableTop="@drawable/navigation_second_menu"
+-            android:gravity="center"
+-            android:text="@string/nearby"
+-            android:textColor="@color/menu_text"
+-            android:textSize="10sp"/>
++            <TextView
++                android:id="@+id/nearby_categ_tab"
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_margin="1dp"
++                android:layout_weight="1"
++                android:drawableTop="@drawable/navigation_second_menu"
++                android:gravity="center"
++                android:text="@string/nearby"
++                android:textColor="@color/menu_text"
++                android:textSize="10sp"/>
+ 
+-        <TextView
+-            android:id="@+id/novelty_categ_tab"
+-            android:layout_width="0dp"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="1dp"
+-            android:layout_weight="1"
+-            android:drawableTop="@drawable/novels_second_menu"
+-            android:gravity="center"
+-            android:text="@string/novelty"
+-            android:textColor="@color/menu_text"
+-            android:textSize="10sp"/>
++            <TextView
++                android:id="@+id/novelty_categ_tab"
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_margin="1dp"
++                android:layout_weight="1"
++                android:drawableTop="@drawable/novels_second_menu"
++                android:gravity="center"
++                android:text="@string/novelty"
++                android:textColor="@color/menu_text"
++                android:textSize="10sp"/>
+ 
+-        <TextView
+-            android:id="@+id/favor_categ_tab"
+-            android:layout_width="0dp"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="1dp"
+-            android:layout_weight="1"
+-            android:drawableTop="@drawable/favor_second_menu"
+-            android:gravity="center"
+-            android:text="@string/favorites"
+-            android:textColor="@color/menu_text"
+-            android:textSize="10sp"/>
++            <TextView
++                android:id="@+id/favor_categ_tab"
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_margin="1dp"
++                android:layout_weight="1"
++                android:drawableTop="@drawable/favor_second_menu"
++                android:gravity="center"
++                android:text="@string/favorites"
++                android:textColor="@color/menu_text"
++                android:textSize="10sp"/>
+ 
+-        <TextView
+-            android:id="@+id/reservation_categ_tab"
+-            android:layout_width="0dp"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="1dp"
+-            android:layout_weight="1"
+-            android:drawableTop="@drawable/reservation_secong_menu"
+-            android:gravity="center"
+-            android:text="@string/reservation"
+-            android:textColor="@color/menu_text"
+-            android:textSize="10sp" />
++            <TextView
++                android:id="@+id/reservation_categ_tab"
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_margin="1dp"
++                android:layout_weight="1"
++                android:drawableTop="@drawable/reservation_secong_menu"
++                android:gravity="center"
++                android:text="@string/reservation"
++                android:textColor="@color/menu_text"
++                android:textSize="10sp" />
+ 
+-        <TextView
+-            android:id="@+id/categories_categ_tab"
+-            android:layout_width="0dp"
+-            android:layout_height="wrap_content"
+-            android:layout_weight="1"
+-            android:drawableTop="@drawable/active_categ_second_menu"
+-            android:gravity="center"
+-            android:text="@string/categories"
+-            android:textColor="@color/menu_text"
+-            android:textSize="10sp"
+-            android:layout_margin="1dp" />
++            <TextView
++                android:id="@+id/categories_categ_tab"
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:drawableTop="@drawable/active_categ_second_menu"
++                android:gravity="center"
++                android:text="@string/categories"
++                android:textColor="@color/menu_text"
++                android:textSize="10sp"
++                android:layout_margin="1dp" />
+ 
+-    </LinearLayout>
++        </LinearLayout>
+-
++    -->
+     <View
+         android:id="@+id/categ_bottom_line"
+         android:layout_width="match_parent"

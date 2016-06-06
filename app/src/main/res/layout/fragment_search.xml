@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tataev.appyes.fragments.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view_main"
+        android:searchIcon="@drawable/ic_search_main"
+        android:voiceIcon="@drawable/ic_search_main_mic"
+
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+       android:focusable="true" />
+    <!--    android:background="@drawable/search_border"-->
+</FrameLayout>

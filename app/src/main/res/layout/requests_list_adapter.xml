@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/users_list_selector"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageRequestAva"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/usersNameRequest"
+        android:layout_toRightOf="@+id/imageRequestAva"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/usersDecline"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="45dp"
+        android:src="@drawable/decline"
+        android:layout_toLeftOf="@+id/usersAccept" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/usersAccept"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="45dp"
+        android:src="@drawable/accept"
+        android:layout_alignParentRight="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usersStatusRequest"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        style="@style/RadioButtonAppTheme"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decline_request"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/requestDecline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_request"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/requestAccept" />
+</RelativeLayout>

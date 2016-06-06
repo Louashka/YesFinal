@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/region"
+        android:id="@+id/region"
+        android:textAllCaps="true"
+        android:textColor="@color/users_text_search"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCountry"
+        android:layout_below="@+id/region"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/country_array"
+        style="@style/SpinnerAppTheme"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCity"
+        android:layout_below="@+id/region"
+        android:layout_toRightOf="@+id/spinnerCountry"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        style="@style/SpinnerAppTheme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:id="@+id/search_gender"
+        android:textAllCaps="true"
+        android:layout_below="@+id/spinnerCountry"
+        android:textColor="@color/users_text_search"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <RadioGroup
+        android:id="@+id/user_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_gender"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/any"
+            android:id="@+id/radioButtonAny"
+            android:textColor="@color/users_tabtext_search"
+            android:layout_weight="1"
+            style="@style/RadioButtonAppThemeBlue"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_male"
+            android:id="@+id/radioButtonM"
+            android:textColor="@color/users_tabtext_search"
+            android:layout_weight="1"
+            style="@style/RadioButtonAppThemeBlue"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_female"
+            android:id="@+id/radioButtonF"
+            android:textColor="@color/users_tabtext_search"
+            android:layout_weight="1"
+            style="@style/RadioButtonAppThemeBlue"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:id="@+id/userAge"
+        android:textAllCaps="true"
+        android:layout_below="@+id/user_gender"
+        android:textColor="@color/users_text_search"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/userAgeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/userAge">
+
+        <Spinner
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAgeFrom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/EditTextAppTheme"
+            android:singleLine="true"
+            android:entries="@array/age_from"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "&#8212;"
+            android:id="@+id/textLine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical" />
+
+        <Spinner
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAgeTo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/EditTextAppTheme"
+            android:singleLine="true"
+            android:entries="@array/age_to"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+</RelativeLayout>

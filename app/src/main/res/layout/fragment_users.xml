@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.tataev.yes.Users"
+    android:background="@android:color/white">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:id="@+id/imageRequest"
+            android:src="@drawable/request"
+            android:visibility="gone" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Поиск людей"
+            android:id="@+id/searchViewUsers"
+            android:searchIcon="@drawable/ic_search"
+            android:voiceIcon="@drawable/ic_search_mic"
+            android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+            android:layout_gravity="center_vertical" />
+
+    </TableRow>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exListView"
+        android:descendantFocusability="afterDescendants"/>
+
+    <com.costum.android.widget.PullAndLoadListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pullToRefreshListView"
+        android:layout_margin="10dp" />
+
+    <com.costum.android.widget.LoadMoreListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadMoreListView"
+        android:visibility="gone"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

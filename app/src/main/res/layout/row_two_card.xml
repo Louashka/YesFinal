@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageViewCard" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSearchResultTitle"
+        android:text="Title"
+        android:id="@+id/textViewTitleCard"
+        android:layout_below="@+id/imageViewCard"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Price"
+        android:id="@+id/textViewPriceCard"
+        android:layout_below="@+id/textViewTitleCard"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Last Price"
+        android:id="@+id/textViewLastPriceCard"
+        android:layout_below="@+id/textViewPriceCard"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-30%"
+        android:id="@+id/textViewDiscountCard"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewActionCard"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Акция"
+        android:id="@+id/textViewActionCard"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewTimeCard"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/textViewTitleCard"
+        android:layout_marginLeft="270dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Бесплатная доставка"
+        android:id="@+id/textViewFreeDeliverCard"
+        android:layout_below="@+id/textViewLastPriceCard"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Бронь"
+        android:id="@+id/textViewOrderCard"
+        android:layout_below="@+id/textViewTimeCard"
+        android:layout_alignRight="@+id/textViewTimeCard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продано"
+        android:id="@+id/textViewNumOfSelledCard"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/textViewOrderCard"
+        android:layout_alignRight="@+id/textViewTimeCard" />
+
+</RelativeLayout>
+
+

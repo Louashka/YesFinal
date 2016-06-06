@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.tataev.appyes.fragments.Favourites">
+
+    <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_search"
+        android:id="@+id/frag1"  />
+<!--
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchViewFavourites"
+        android:searchIcon="@drawable/ic_search"
+        android:voiceIcon="@drawable/ic_search_mic"
+        android:background="@drawable/view_border"
+        android:layout_margin="5dp" />
+-->
+    <LinearLayout
+        android:id="@+id/favor_top_line"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/menu_tabs_line" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/menu_tabs_line" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/menu_tabs_line" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/actionbar_background" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/menu_tabs_line" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/menu_tabs_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favor_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@color/menu_tabs">
+
+        <TextView
+            android:id="@+id/menu_favor_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/yes_second_menu"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/menu_text"
+            android:textAllCaps="true"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/nearby_favor_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/navigation_second_menu"
+            android:gravity="center"
+            android:text="@string/nearby"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/novelty_favor_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/novels_second_menu"
+            android:gravity="center"
+            android:text="@string/novelty"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/favor_favor_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/active_favor_second_menu"
+            android:gravity="center"
+            android:text="@string/favorites"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/reservation_favor_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/reservation_secong_menu"
+            android:gravity="center"
+            android:text="@string/reservation"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/categories_favor_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/categ_second_menu"
+            android:gravity="center"
+            android:text="@string/categories"
+            android:textColor="@color/menu_text"
+            android:textSize="10sp"
+            android:layout_margin="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/favor_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/menu_tabs_line" />
+
+</LinearLayout>

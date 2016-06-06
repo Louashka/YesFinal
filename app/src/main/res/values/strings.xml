@@ -1,0 +1,1799 @@
+<resources>
+    <string name="app_name">Yes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Поиск</string>
+    <string name="share">Поделиться</string>
+    <string name="refresh">Обновить</string>
+    <string name="overflow">Дополнительные опции</string>
+    <string name="navigation">Навигация</string>
+    <string name="reviews">Отзывы</string>
+    <string name="novelty">Новинки</string>
+    <string name="profile">Профиль</string>
+    <string name="users">Пользователи</string>
+    <string name="categories">Категории</string>
+    <string name="rating">Рейтинг</string>
+    <string name="discussions">Обсуждения</string>
+    <string name="reservation">Бронь</string>
+    <string name="about_prog">О программе</string>
+    <string name="nearby">Рядом</string>
+    <string name="favorites">Избранное</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_novelty_adapter">NoveltyAdapter</string>
+    <string name="email">E-mail</string>
+    <string name="login_email">Логин или e-mail</string>
+    <string name="password">Пароль</string>
+    <string name="code">Код</string>
+    <string name="enter_code">Введите код</string>
+    <string name="refresh_image">Обновить изображение</string>
+    <string name="forget_pswd">Забыли пароль?</string>
+    <string name="recall">Напомнить</string>
+    <string name="registration">Регистрация</string>
+    <string name="entry">Вход</string>
+
+    <string name="status">Статус</string>
+    <string name="gender">Пол</string>
+    <string name="reg_gender">Ваш пол</string>
+    <string name="male">м</string>
+    <string name="female">ж</string>
+    <string name="birthday">Дата \nрождения</string>
+    <string name="city">Город</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="login">Логин</string>
+    <string name="reg_password"><font size="12">Пароль (7 или более символов)</font></string>
+    <string name="security">Защита</string>
+    <string name="address">Адрес доставки</string>
+    <string name="repeat_pswd">Подтвердите пароль</string>
+    <string name="mail">Адрес эл. почты</string>
+    <string name="show_history">Показать друзьям историю покупок</string>
+    <string name="show_recomendations">Показать друзьям рекомендации товаров и услуг</string>
+    <string name="agreement">Нажимая кнопку "Зарегистрироваться", я подтверждаю свою дееспособность и даю согласие на обработку своих персональных данных</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="region">Регион</string>
+    <string name="choose_country">Выберите страну</string>
+    <string name="choose_city">Выберите город</string>
+    <string name="any">Любой</string>
+    <string name="age">Возраст</string>
+    <string name="from">От</string>
+    <string name="to">До</string>
+    <string name="choose_male">Мужской</string>
+    <string name="choose_female">Женский</string>
+    <string name="novelty_info">&gt;&gt; К информации о товарах и сервисных услугах</string>
+    <string name="search_param">Параметры поиска</string>
+    <string name="search_hint">Я ищу...</string>
+    <string name="log_out">Выход</string>
+    <string name="settings">Настройки</string>
+    <string name="save">Сохранить</string>
+    <string name="accept_request">Запрос принят</string>
+    <string name="decline_request">Запрос отклонен</string>
+
+    <string-array name="country_array">
+        <item>Выберите страну</item>
+        <item>Азербайджан</item>
+        <item>Армения</item>
+        <item>Белоруссия</item>
+        <item>Казахстан</item>
+        <item>Киргизия</item>
+        <item>Молдавия</item>
+        <item>Россия</item>
+        <item>Таджикистан</item>
+        <item>Туркмения</item>
+        <item>Узбекистан</item>
+        <item>Украина</item>
+    </string-array>
+
+    <string-array name="city_default">
+        <item>Выберите город</item>
+    </string-array>
+
+    <string-array name="city_azerbaijan">
+        <item>Выберите город</item>
+        <item>Агдам</item>
+        <item>Агдаш</item>
+        <item>Агджабеди</item>
+        <item>Аджикабул</item>
+        <item>Акстафа</item>
+        <item>Али-Байрамлы</item>
+        <item>Астара</item>
+        <item>Ахсу</item>
+        <item>Барда</item>
+        <item>Бейлаган</item>
+        <item>Белокань</item>
+        <item>Биласувар</item>
+        <item>Габала</item>
+        <item>Геокчай</item>
+        <item>Геранбой</item>
+        <item>Гобустан</item>
+        <item>Гузанли</item>
+        <item>Гусары</item>
+        <item>Гянджа</item>
+        <item>Дашкесан</item>
+        <item>Джалилабад</item>
+        <item>Дивичи</item>
+        <item>Евлах</item>
+        <item>Закаталы</item>
+        <item>Зардоб</item>
+        <item>Имишли</item>
+        <item>Исмайллы</item>
+        <item>Казах</item>
+        <item>Кахи</item>
+        <item>Кедабек</item>
+        <item>Кельбаджары</item>
+        <item>Куба</item>
+        <item>Кюрдамир</item>
+        <item>Лачин</item>
+        <item>Ленкорань</item>
+        <item>Лерик</item>
+        <item>Масаллы</item>
+        <item>Мингечаур</item>
+        <item>Нафталан</item>
+        <item>Нахичевань</item>
+        <item>Нефтечала</item>
+        <item>Огуз</item>
+        <item>Саатлы</item>
+        <item>Сабирабад</item>
+        <item>Сальяны</item>
+        <item>Самух</item>
+        <item>Сиазань</item>
+        <item>Сумгаит</item>
+        <item>Тауз</item>
+        <item>Тер-Тер</item>
+        <item>Уджары</item>
+        <item>Физули</item>
+        <item>Ханкенди</item>
+        <item>Ханлар</item>
+        <item>Хачмас</item>
+        <item>Хызы</item>
+        <item>Шамкир</item>
+        <item>Шеки</item>
+        <item>Шемаха</item>
+        <item>Шуша</item>
+    </string-array>
+
+    <string-array name="city_armenia">
+        <item>Выберите город</item>
+        <item>Абовян</item>
+        <item>Алаверди</item>
+        <item>Алапарс</item>
+        <item>Амасия</item>
+        <item>Ани</item>
+        <item>Апаран</item>
+        <item>Арапи</item>
+        <item>Арарат</item>
+        <item>Аргел</item>
+        <item>Аревшат</item>
+        <item>Армавир</item>
+        <item>Арташат</item>
+        <item>Артик</item>
+        <item>Ахурян</item>
+        <item>Ашотск</item>
+        <item>Аштарак</item>
+        <item>Баграмян</item>
+        <item>Берд</item>
+        <item>Ваагни</item>
+        <item>Вайк</item>
+        <item>Ванадзор</item>
+        <item>Варденис</item>
+        <item>Веди</item>
+        <item>Гавар</item>
+        <item>Горис</item>
+        <item>Гюмри</item>
+        <item>Даларик</item>
+        <item>Джермук</item>
+        <item>Дзорагет</item>
+        <item>Дилижан</item>
+        <item>Егвард</item>
+        <item>Егегнут</item>
+        <item>Ереван</item>
+        <item>Ехегнадзор</item>
+        <item>Зовуни</item>
+        <item>Золак</item>
+        <item>Иджеван</item>
+        <item>Каджаран</item>
+        <item>Камо</item>
+        <item>Капан</item>
+        <item>Каракерд</item>
+        <item>Кохб</item>
+        <item>Лермонтов</item>
+        <item>Маралик</item>
+        <item>Маргаовит</item>
+        <item>Мартуни</item>
+        <item>Масис</item>
+        <item>Меградзор</item>
+        <item>Мегри</item>
+        <item>Мецамор</item>
+        <item>Мясникян</item>
+        <item>Нагорный Карабах</item>
+        <item>Ноемберян</item>
+        <item>Нор-Ачн</item>
+        <item>Нор-Гехи</item>
+        <item>Памбак</item>
+        <item>Пемзашен</item>
+        <item>Птгни</item>
+        <item>Пюник</item>
+        <item>Раздан</item>
+        <item>Сарнахпюр</item>
+        <item>Сарухан</item>
+        <item>Севан</item>
+        <item>Сисиан</item>
+        <item>Спитак</item>
+        <item>Степанаван</item>
+        <item>Ташир</item>
+        <item>Цахкадзор</item>
+        <item>Цахкаовит</item>
+        <item>Чамбарак</item>
+        <item>Чаренцаван</item>
+        <item>Ширакаван</item>
+        <item>Эчмиадзин</item>
+    </string-array>
+
+    <string-array name="city_byelorussia">
+        <item>Выберите город</item>
+        <item>Бобруйск</item>
+        <item>Барановичи</item>
+        <item>Борисов</item>
+        <item>Барань</item>
+        <item>Белоозерск</item>
+        <item>Береза</item>
+        <item>Березино</item>
+        <item>Березовка</item>
+        <item>Браслав</item>
+        <item>Брест</item>
+        <item>Буда-Кошелево</item>
+        <item>Быхов</item>
+        <item>Василевичи</item>
+        <item>Верхнедвинск</item>
+        <item>Ветка</item>
+        <item>Вилейка</item>
+        <item>Витебск</item>
+        <item>Волковыск</item>
+        <item>Воложин</item>
+        <item>Высокое</item>
+        <item>Ганцевичи</item>
+        <item>Глубокое</item>
+        <item>Гомель</item>
+        <item>Горки</item>
+        <item>Городок</item>
+        <item>Гродно</item>
+        <item>Давид-Городок</item>
+        <item>Дзержинск</item>
+        <item>Дисна</item>
+        <item>Добруш</item>
+        <item>Докшицы</item>
+        <item>Дрогичин</item>
+        <item>Дубровно</item>
+        <item>Дятлово</item>
+        <item>Ельск</item>
+        <item>Жодино</item>
+        <item>Жабинка</item>
+        <item>Житковичи</item>
+        <item>Жлобин</item>
+        <item>Заславль</item>
+        <item>Иваново</item>
+        <item>Ивацевичи</item>
+        <item>Ивье</item>
+        <item>Калинковичи</item>
+        <item>Каменец</item>
+        <item>Кировск</item>
+        <item>Клецк</item>
+        <item>Климовичи</item>
+        <item>Кличев</item>
+        <item>Кобрин</item>
+        <item>Копыль</item>
+        <item>Коссово</item>
+        <item>Костюковичи</item>
+        <item>Кричев</item>
+        <item>Крупки</item>
+        <item>Лепель</item>
+        <item>Лида</item>
+        <item>Логойск</item>
+        <item>Лунинец</item>
+        <item>Любань</item>
+        <item>Ляховичи</item>
+        <item>Мозырь</item>
+        <item>Малорита</item>
+        <item>Марьина Горка</item>
+        <item>Микашевичи</item>
+        <item>Минск</item>
+        <item>Миоры</item>
+        <item>Могилев</item>
+        <item>Молодечно</item>
+        <item>Мосты</item>
+        <item>Мстиславль</item>
+        <item>Мядель</item>
+        <item>Новополоцк</item>
+        <item>Наровля</item>
+        <item>Несвиж</item>
+        <item>Новогрудок</item>
+        <item>Новолукомль</item>
+        <item>Орша</item>
+        <item>Осиповичи</item>
+        <item>Ошмяны</item>
+        <item>Пинск</item>
+        <item>Полоцк</item>
+        <item>Петриков</item>
+        <item>Поставы</item>
+        <item>Пружаны</item>
+        <item>Речица</item>
+        <item>Рогачев</item>
+        <item>Светлогорск</item>
+        <item>Свислочь</item>
+        <item>Сенно</item>
+        <item>Скидель</item>
+        <item>Славгород</item>
+        <item>Слоним</item>
+        <item>Слуцк</item>
+        <item>Смолевичи</item>
+        <item>Сморгонь</item>
+        <item>Солигорск</item>
+        <item>Старые Дороги</item>
+        <item>Столбцы</item>
+        <item>Столин</item>
+        <item>Толочин</item>
+        <item>Туров</item>
+        <item>Узда</item>
+        <item>Фаниполь</item>
+        <item>Хойники</item>
+        <item>Чаусы</item>
+        <item>Чашники</item>
+        <item>Червень</item>
+        <item>Чериков</item>
+        <item>Чечерс</item>
+        <item>Шклов</item>
+        <item>Щучин</item>
+    </string-array>
+
+    <string-array name="city_kazakhstan">
+        <item>Выберите город</item>
+        <item>Абай</item>
+        <item>Акколь</item>
+        <item>Аксай</item>
+        <item>Аксу</item>
+        <item>Актау</item>
+        <item>Актюбинск</item>
+        <item>Алга</item>
+        <item>Алма-Ата</item>
+        <item>Аральск</item>
+        <item>Аркалык</item>
+        <item>Арыс</item>
+        <item>Астана</item>
+        <item>Атбасар</item>
+        <item>Атырау</item>
+        <item>Аягуз</item>
+        <item>Байконур</item>
+        <item>Балхаш</item>
+        <item>Булаево</item>
+        <item>Державинск</item>
+        <item>Ерейментау</item>
+        <item>Есик</item>
+        <item>Есиль</item>
+        <item>Жанаозен</item>
+        <item>Жанатас</item>
+        <item>Жаркент</item>
+        <item>Жезказган</item>
+        <item>Жем</item>
+        <item>Жетысай</item>
+        <item>Житикара</item>
+        <item>Зайсан</item>
+        <item>Зыряновск</item>
+        <item>Казалинск</item>
+        <item>Кандыагаш</item>
+        <item>Капчагай</item>
+        <item>Караганда</item>
+        <item>Каражал</item>
+        <item>Каратау</item>
+        <item>Каркаралинск</item>
+        <item>Каскелен</item>
+        <item>Кентау</item>
+        <item>Кокшетау</item>
+        <item>Костанай</item>
+        <item>Кульсары</item>
+        <item>Курчатов</item>
+        <item>Кызылорда</item>
+        <item>Ленгер</item>
+        <item>Лисаковск</item>
+        <item>Макинск</item>
+        <item>Мамлютка</item>
+        <item>Павлодар</item>
+        <item>Петропавловск</item>
+        <item>Приозёрск</item>
+        <item>Риддер</item>
+        <item>Рудный</item>
+        <item>Сарань</item>
+        <item>Сарканд</item>
+        <item>Сарыагаш</item>
+        <item>Сатпаев</item>
+        <item>Семей</item>
+        <item>Сергеевка</item>
+        <item>Серебрянск</item>
+        <item>Степногорск</item>
+        <item>Степняк</item>
+        <item>Тайынша</item>
+        <item>Талгар</item>
+        <item>Талдыкорган</item>
+        <item>Тараз</item>
+        <item>Текели</item>
+        <item>Темир</item>
+        <item>Темиртау</item>
+        <item>Туркестан</item>
+        <item>Уральск</item>
+        <item>Усть-Каменогорск</item>
+        <item>Учарал</item>
+        <item>Уштобе</item>
+        <item>Форт-Шевченко</item>
+        <item>Хромтау</item>
+        <item>Чардара</item>
+        <item>Шалкар</item>
+        <item>Шар</item>
+        <item>Шахтинск</item>
+        <item>Шемонаиха</item>
+        <item>Шу</item>
+        <item>Шымкент</item>
+        <item>Щучинск</item>
+        <item>Экибастуз</item>
+        <item>Эмба</item>
+    </string-array>
+
+    <string-array name="city_kyrgyzstan">
+        <item>Выберите город</item>
+        <item>Айдаркен</item>
+        <item>Балыкчы</item>
+        <item>Баткен</item>
+        <item>Бишкек</item>
+        <item>Джалал-Абад</item>
+        <item>Исфана</item>
+        <item>Кадамжай</item>
+        <item>Каинды</item>
+        <item>Кант</item>
+        <item>Кара-Балта</item>
+        <item>Каракол</item>
+        <item>Кара-Куль</item>
+        <item>Кара-Суу</item>
+        <item>Кемин</item>
+        <item>Кербен</item>
+        <item>Кок-Джангак</item>
+        <item>Кочкор-Ата</item>
+        <item>Кызыл-Кия</item>
+        <item>Майлуу-Суу</item>
+        <item>Нарын</item>
+        <item>Ноокат</item>
+        <item>Орловка</item>
+        <item>Ош</item>
+        <item>Сулюкта</item>
+        <item>Талас</item>
+        <item>Таш-Кумыр</item>
+        <item>Токмок</item>
+        <item>Токтогул</item>
+        <item>Узген</item>
+        <item>Чолпон-Ата</item>
+        <item>Шопоков</item>
+    </string-array>
+
+    <string-array name="city_moldavia">
+        <item>Выберите город</item>
+        <item>Бендеры</item>
+        <item>Бессарабка</item>
+        <item>Бируинца</item>
+        <item>Бричаны</item>
+        <item>Быковец</item>
+        <item>Вадул-луй-Водэ</item>
+        <item>Ватра</item>
+        <item>Вулканешты</item>
+        <item>Гиндешты</item>
+        <item>Глодяны</item>
+        <item>Григориополь</item>
+        <item>Днестровск</item>
+        <item>Дондюшаны</item>
+        <item>Дрокия</item>
+        <item>Дубоссары</item>
+        <item>Дурлешты</item>
+        <item>Единец</item>
+        <item>Кагул</item>
+        <item>Каинары</item>
+        <item>Калараш</item>
+        <item>Каменка</item>
+        <item>Кантемир</item>
+        <item>Каушаны</item>
+        <item>Кишинёв</item>
+        <item>Кодру</item>
+        <item>Комрат</item>
+        <item>Конгаз</item>
+        <item>Корнешты</item>
+        <item>Костешты</item>
+        <item>Красное</item>
+        <item>Криково</item>
+        <item>Криулень</item>
+        <item>Купчинь</item>
+        <item>Леова</item>
+        <item>Липканы</item>
+        <item>Маркулешты</item>
+        <item>Маяк</item>
+        <item>Ниспорены</item>
+        <item>Новотираспольский</item>
+        <item>Новые Анены</item>
+        <item>Окница</item>
+        <item>Орхей</item>
+        <item>Отачь</item>
+        <item>Резина</item>
+        <item>Рыбница</item>
+        <item>Рышканы</item>
+        <item>Слободзея</item>
+        <item>Сороки</item>
+        <item>Страшены</item>
+        <item>Сынджера</item>
+        <item>Сынжерея</item>
+        <item>Тараклия</item>
+        <item>Твардица</item>
+        <item>Теленешты</item>
+        <item>Тирасполь</item>
+        <item>Унгень</item>
+        <item>Фалешты</item>
+        <item>Флорешты</item>
+        <item>Фрунзе</item>
+        <item>Хынчешты</item>
+        <item>Чадыр-Лунга</item>
+        <item>Чимишлия</item>
+        <item>Шолданешты</item>
+        <item>Штефан-Водэ</item>
+        <item>Яловены</item>
+        <item>Яргара</item>
+    </string-array>
+
+    <string-array name="city_russia">
+        <item>Выберите город</item>
+        <item>Абакан</item>
+        <item>Альметьевск</item>
+        <item>Ангарск</item>
+        <item>Арзамас</item>
+        <item>Армавир</item>
+        <item>Архангельск</item>
+        <item>Астрахань</item>
+        <item>Ачинск</item>
+        <item>Балаково</item>
+        <item>Балашиха</item>
+        <item>Барнаул</item>
+        <item>Батайск</item>
+        <item>Белгород</item>
+        <item>Березники</item>
+        <item>Бийск</item>
+        <item>Благовещенск</item>
+        <item>Братск</item>
+        <item>Брянск</item>
+        <item>Великие Луки</item>
+        <item>Великий Новгород</item>
+        <item>Владивосток</item>
+        <item>Владикавказ</item>
+        <item>Владимир</item>
+        <item>Волгоград</item>
+        <item>Волгодонск</item>
+        <item>Волжский</item>
+        <item>Вологда</item>
+        <item>Воронеж</item>
+        <item>Глазов</item>
+        <item>Грозный</item>
+        <item>Дербент</item>
+        <item>Дзержинск</item>
+        <item>Димитровград</item>
+        <item>Екатеринбург</item>
+        <item>Елец</item>
+        <item>Железнодорожный</item>
+        <item>Жуковский</item>
+        <item>Зеленоград</item>
+        <item>Зеленодольск</item>
+        <item>Златоуст</item>
+        <item>Иваново</item>
+        <item>Ижевск</item>
+        <item>Иркутск</item>
+        <item>Йошкар-Ола</item>
+        <item>Казань</item>
+        <item>Калининград</item>
+        <item>Калуга</item>
+        <item>Каменск-Уральский</item>
+        <item>Камышин</item>
+        <item>Канск</item>
+        <item>Кемерово</item>
+        <item>Киров</item>
+        <item>Киселевск</item>
+        <item>Кисловодск</item>
+        <item>Ковров</item>
+        <item>Коломна</item>
+        <item>Комсомольск-на-Амуре</item>
+        <item>Королев</item>
+        <item>Кострома</item>
+        <item>Краснодар</item>
+        <item>Красноярск</item>
+        <item>Курган</item>
+        <item>Курск</item>
+        <item>Кызыл</item>
+        <item>Ленинск-Кузнецкий</item>
+        <item>Липецк</item>
+        <item>Люберцы</item>
+        <item>Магнитогорск</item>
+        <item>Майкоп</item>
+        <item>Махачкала</item>
+        <item>Междуреченск</item>
+        <item>Миасс</item>
+        <item>Москва</item>
+        <item>Мурманск</item>
+        <item>Муром</item>
+        <item>Мытищи</item>
+        <item>Набережные Челны</item>
+        <item>Назрань</item>
+        <item>Нальчик</item>
+        <item>Находка</item>
+        <item>Невиномысск</item>
+        <item>Нефтекамск</item>
+        <item>Нефтеюганск</item>
+        <item>Нижневартовск</item>
+        <item>Нижнекамск</item>
+        <item>Нижний Новгород</item>
+        <item>Нижний Тагил</item>
+        <item>Новокузнецк</item>
+        <item>Новокуйбышевск</item>
+        <item>Новомосковск</item>
+        <item>Новороссийск</item>
+        <item>Новосибирск</item>
+        <item>Новотроицк</item>
+        <item>Новочебоксарск</item>
+        <item>Новочеркасск</item>
+        <item>Новошахтинск</item>
+        <item>Ногинск</item>
+        <item>Норильск</item>
+        <item>Обнинск</item>
+        <item>Одинцово</item>
+        <item>Октябрьский</item>
+        <item>Омск</item>
+        <item>Орел</item>
+        <item>Оренбург</item>
+        <item>Орехово-Зуево</item>
+        <item>Орск</item>
+        <item>Пенза</item>
+        <item>Первоуральск</item>
+        <item>Пермь</item>
+        <item>Петрозаводск</item>
+        <item>Петропавловск-Камчатский</item>
+        <item>Подольск</item>
+        <item>Прокопьевск</item>
+        <item>Псков</item>
+        <item>Пятигорск</item>
+        <item>Ростов-на-Дону</item>
+        <item>Рубцовск</item>
+        <item>Рыбинск</item>
+        <item>Рязань</item>
+        <item>Салават</item>
+        <item>Самара</item>
+        <item>Санкт-Петербург</item>
+        <item>Саранск</item>
+        <item>Сарапул</item>
+        <item>Саратов</item>
+        <item>Северодвинск</item>
+        <item>Северск</item>
+        <item>Сергиев Посад</item>
+        <item>Серов</item>
+        <item>Серпухов</item>
+        <item>Смоленск</item>
+        <item>Соликамск</item>
+        <item>Сочи</item>
+        <item>Ставрополь</item>
+        <item>Старый Оскол</item>
+        <item>Стерлитамак</item>
+        <item>Сызрань</item>
+        <item>Сыктывкар</item>
+        <item>Таганрог</item>
+        <item>Тамбов</item>
+        <item>Тверь</item>
+        <item>Тольятти</item>
+        <item>Томск</item>
+        <item>Тула</item>
+        <item>Тюмень</item>
+        <item>Улан-Удэ</item>
+        <item>Ульяновск</item>
+        <item>Уссурийск</item>
+        <item>Усть-Илимск</item>
+        <item>Уфа</item>
+        <item>Ухта</item>
+        <item>Хабаровск</item>
+        <item>Хасавюрт</item>
+        <item>Химки</item>
+        <item>Чебоксары</item>
+        <item>Челябинск</item>
+        <item>Череповец</item>
+        <item>Черкесск</item>
+        <item>Чита</item>
+        <item>Шахты</item>
+        <item>Щелково</item>
+        <item>Электросталь</item>
+        <item>Элиста</item>
+        <item>Энгельс</item>
+        <item>Южно-Сахалинск</item>
+        <item>Якутск</item>
+        <item>Ярославль</item>
+    </string-array>
+
+    <string-array name="city_tajikistan">
+        <item>-//-</item>
+    </string-array>
+
+    <string-array name="city_turkmenistan">
+        <item>-//-</item>
+    </string-array>
+
+    <string-array name="city_uzbekistan">
+        <item>-//-</item>
+    </string-array>
+
+    <string-array name="city_ukraine">
+        <item>-//-</item>
+    </string-array>
+
+    <string-array name="user_age_from">
+        <item>От</item>
+        <item>14</item>
+        <item>18</item>
+        <item>25</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="user_age_to">
+        <item>До</item>
+        <item>14</item>
+        <item>18</item>
+        <item>25</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="title_activity_requests">Requests</string>
+    <string name="like">Нравится</string>
+    <string name="do_not_like">Не нравится</string>
+    <string name="do_not_know">Не знаю</string>
+    <string name="create_review">Создать опрос</string>
+    <string name="reviews_history">История опросов</string>
+
+    <string-array name="ratings">
+        <item>Рейтинг магазинов</item>
+        <item>Рейтинг покупателей</item>
+        <item>Рейтинг продаваемых товаров</item>
+        <item>Рейтинг продаваемых услуг</item>
+        <item>Самые популярные категории</item>
+        <item>Самые популярные объекты</item>
+    </string-array>
+
+    <string-array name="discuss_draft">
+        <item>Оригинал Xiaomi Mi4 16 ГБ 4 г LTE...</item>
+        <item>Bluetooth беспроводной динамик Mini...</item>
+        <item>Мини водонепроницаемый беспроводной...</item>
+    </string-array>
+
+    <string-array name="reservation_items">
+        <item>Купленные</item>
+        <item>Заблокированные</item>
+        <item>Мои желания</item>
+        <item>История покупок</item>
+        <item>Проложить кратчайший маршрут</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>1993</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="categories_items">
+        <item>Одежда для мужчин</item>
+        <item>Одежда для женщин</item>
+        <item>Детские товары</item>
+        <item>Телефоны и аксессуары</item>
+        <item>Электроника</item>
+        <item>Товары для ремонта</item>
+        <item>Товары для сада и огорода</item>
+        <item>Техника для кухни</item>
+        <item>Техника для дома</item>
+
+    </string-array>
+
+    <string-array name="manCloth">
+        <item>Верх</item>
+        <item>Низ</item>
+        <item>Верхняя одежда</item>
+        <item>Пиджаки и костюмы</item>
+        <item>Спортивная одежда</item>
+        <item>Домашняя одежда</item>
+        <item>Плавки и пляжная одежда</item>
+        <item>Аксессуары</item>
+    </string-array>
+
+    <string-array name="womanCloth">
+        <item>Популярные товары</item>
+        <item>Низ</item>
+        <item>Верхняя одежда</item>
+        <item>Свадебные и торжественные платья</item>
+        <item>Нижнее бельё</item>
+        <item>Домашняя одежда</item>
+        <item>Спортивная одежда</item>
+        <item>Одежда для беременных</item>
+        <item>Аксессуары</item>
+    </string-array>
+
+    <string-array name="childCloth">
+        <item>Для новорожденных</item>
+        <item>Одежда для девочек</item>
+        <item>Для девушек</item>
+        <item>Одежда для мальчиков</item>
+        <item>Для юношей</item>
+        <item>Школа</item>
+        <item>Аксессуары</item>
+    </string-array>
+
+
+    <string-array name="mobilesAndAccessoriesArray">
+        <item>Мобильные телефоны</item>
+        <item>Аксессуары для iPhone</item>
+        <item>Гаджеты</item>
+        <item>Домашние и офисные телефоны</item>
+        <item>Аксессуары для телефонов</item>
+        <item>Запчасти</item>
+    </string-array>
+
+    <string-array name="accessoriesForIphoneArray">
+        <item>Защитные плёнки и стекла</item>
+        <item>Корпуса</item>
+        <item>Автомобильные зарядные устройства</item>
+        <item>Внешние аккумуляторы</item>
+        <item>Зарядные устройства</item>
+        <item>Кабели</item>
+        <item>USB накопители для смартфонов</item>
+        <item>Адаптеры, переходники</item>
+        <item>Держатели для селфи</item>
+        <item>Аккумуляторы</item>
+        <item>Держатели автомобильные для телефонов</item>
+        <item>Наклейки  Подарочная упаковка</item>
+        <item>Держатели настольные для телефонов</item>
+        <item>Сувениры</item>
+        <item>Брелки</item>
+        <item>Средства для ухода</item>
+        <item>Чехлы </item>
+
+    </string-array>
+
+    <string-array name="mobilesGadgetArray">
+        <item>Умные часы</item>
+        <item>Умные браслеты</item>
+        <item>Фитнес – трекеры</item>
+        <item>Аксессуар  для гаджетов</item>
+
+    </string-array>
+    <string-array name="wiredPhonesArray">
+        <item>Офисные телефоны</item>
+        <item>Домашние телефоны </item>
+        <item>Радиотелефоны</item>
+        <item>Радиостанции</item>
+
+
+    </string-array>
+    <string-array name="mobilesAccessoriesArray">
+        <item>Защитные плёнки и стекла</item>
+        <item>Корпуса</item>
+        <item>Автомобильные зарядные устройства</item>
+        <item>Внешние аккумуляторы</item>
+        <item>Зарядные устройства</item>
+        <item>Кабели</item>
+        <item>Карты памяти</item>
+        <item>Кард-ридеры</item>
+        <item>USB накопители для смартфонов</item>
+        <item>Док-станции</item>
+        <item>Стилусы</item>
+        <item>Адаптеры, переходники</item>
+        <item>Держатели для селфи</item>
+        <item>Аккумуляторы</item>
+        <item>Усилители и антенны</item>
+        <item>Держатели автомобильные для телефонов</item>
+        <item>Наклейки,Подарочная упаковка</item>
+        <item>Держатели настольные для телефонов</item>
+        <item>FM-трансмиттеры</item>
+        <item>Сувениры</item>
+        <item>Портативная акустика</item>
+        <item>Брелки</item>
+        <item>Хабы</item>
+        <item>Средства для ухода</item>
+        <item>Наушники</item>
+        <item>Bluetooth гарнитуры</item>
+        <item>Сумки</item>
+        <item>Чехлы-бамперы</item>
+        <item>Водонепрони-цаемые чехлы</item>
+        <item>Кожаные чехлы</item>
+        <item>Алюминиевые чехлы</item>
+        <item>Чехлы со стразами</item>
+    </string-array>
+    <string-array name="mobileComponentsArray">
+        <item>Дисплеи</item>
+        <item>Батареи</item>
+        <item>Корпуса</item>
+        <item>Усилители сигнала</item>
+        <item>Другие</item>
+    </string-array>
+
+    <string-array name="electronicsArray">
+        <item>Фото и Видеокамеры</item>
+        <item>Телевизоры</item>
+        <item>Видео и аудиотехника</item>
+        <item>Плееры и наушники</item>
+        <item>Игры,софт,развлечения</item>
+        <item>Умная электроника</item>
+        <item>Электронные книги</item>
+        <item>Автомобильная электроника</item>
+        <item>Аксессуары и запчасти</item>
+    </string-array>
+
+    <string-array name="photoAndCameraArray">
+        <item>Мини-камеры</item>
+        <item>Цифровые камеры</item>
+        <item>Камеры и фотоаксессуары</item>
+        <item>Портативные видеокамеры</item>
+        <item>Объективы и аксессуары</item>
+
+    </string-array>
+    <string-array name="tvSetArray">
+        <item>SUHD телевизоры</item>
+        <item>ULTRA HD телевизоры</item>
+        <item>3D телевизоры</item>
+        <item>Smart телевизоры</item>
+        <item>LED телевизоры</item>
+
+        <item>OLED телевизоры </item>
+        <item>Домашние кинотеатры</item>
+        <item>Спутниковое, цифровое, кабельное ТВ</item>
+        <item>Тумбы, кронштейн, экраны</item>
+        <item>Аксессуары для телевизоров</item>
+
+    </string-array>
+    <string-array name="videoAndAudioArray">
+        <item>Проекторы и аксессуары</item>
+        <item>Видео и аудио аксессуары</item>
+        <item>Колонки</item>
+        <item>ТВ-карты</item>
+        <item>Саундбары</item>
+        <item>DVD, Blu-Ray, Видео</item>
+        <item>Hi-Fi аппаратура</item>
+        <item>Музыкальные центры</item>
+        <item>Портативное аудио</item>
+        <item>Музыкальные инструменты</item>
+        <item>Аксессуары аудио, видео</item>
+
+    </string-array>
+    <string-array name="walkManAndHeadphoneArray">
+        <item>MP3-плееры</item>
+        <item>MP4 –плееры</item>
+        <item>Радиоприемники</item>
+
+    </string-array>
+    <string-array name="gamesSoftArray">
+        <item>Портативные Видеоприставки</item>
+        <item>Игровые приставки</item>
+        <item>Колонки</item>
+        <item>Аксессуары для игровых приставок</item>
+        <item>Кино</item>
+        <item>Книги</item>
+        <item>Музыкальные инструменты</item>
+        <item>Игрушки (радиоуправляемые игрушки)</item>
+    </string-array>
+    <string-array name="cleverElectronicsArraay">
+        <item>Умные часы</item>
+        <item>Умные браслеты</item>
+        <item>Умные пульты</item>
+        <item>Носимая электроника</item>
+        <item>Для дома</item>
+        <item>Для занятия спортом</item>
+
+    </string-array>
+    <string-array name="elecBooksArray">
+        <item>Books .pdf</item>
+    </string-array>
+    <string-array name="carsElectronicsArray">
+        <item>Автомагнитолы</item>
+        <item>Видеорегистраторы</item>
+        <item>Радар-детекторы</item>
+        <item>Gps - навигаторы</item>
+        <item>Минимойки</item>
+        <item>Автомобильные пылесосы</item>
+        <item>Kолонки</item>
+        <item>Усилители</item>
+        <item>Аксессуары для автотехники</item>
+
+    </string-array>
+    <string-array name="detailsAndAccessoriesArray">
+        <item>Колонки</item>
+        <item>Карты памяти</item>
+        <item>Аккумуляторы</item>
+        <item>Сумки для электроники</item>
+        <item>Цифровые кабеля</item>
+        <item>Чехлы для телефонов</item>
+    </string-array>
+
+
+    <!--   hoseGoodsArray                  -->
+    <string-array name="hoseGoodsArray">
+        <item>Электроинструменты</item>
+        <item>Ручные инструменты</item>
+        <item>Материалы для ремонта</item>
+        <item>Безопасность и защита</item>
+        <item>Электрооборудования</item>
+
+        <item>Аксессуары для дома,сада и ремонта</item>
+
+    </string-array>
+    <string-array name="electricInstrumenentsArray">
+        <item>шуруповерты,дрели,перфораторы</item>
+        <item>шлифовальные машины,лобзики пилы,рубанки</item>
+        <item>аккумуляторные отвертки</item>
+        <item>многофункциональный инструмент</item>
+        <item>краскопульты</item>
+        <item>наборы электроинстрементов</item>
+
+    </string-array>
+    <string-array name="handInstrumentsArray">
+        <item>Отвертки</item>
+        <item>Шарнирно-губцевый инструмент</item>
+        <item>Ключи</item>
+        <item>Наборы ручного инструмента</item>
+    </string-array>
+    <string-array name="remountInstrumentsArray">
+        <item>Отделочные материалы</item>
+        <item>Напольные покрытия</item>
+        <item>Строительные материалы</item>
+        <item>Лаки и краски</item>
+        <item>Элементы крепежа и фурнитура</item>
+
+    </string-array>
+    <string-array name="securityArray">
+        <item>Радионяни</item>
+        <item>Камеры видеонаблюдения</item>
+        <item>Магнитофоны для видеонаблюдения</item>
+        <item>Системы видеонаблюдения</item>
+        <item>Аксессуары для видеонаблюдения</item>
+        <item>Датчики и сигнализации</item>
+        <item>Безопасность на рабочем месте</item>
+        <item>Аварийные наборы</item>
+        <item>Сейфы</item>
+        <item>Пожарная безопасность</item>
+    </string-array>
+    <string-array name="electricEquipmentArray">
+        <item>Сварочное оборудование</item>
+        <item>Электрогенераторы</item>
+        <item>Стабилизаторы напряжения</item>
+        <item>Электроудлинители и переходники</item>
+        <item>Автотрансформаторы</item>
+        <item>Аккумуляторные батареи</item>
+        <item>Выключатели и переключатели</item>
+        <item>Розетки</item>
+        <item>Трансформаторы</item>
+        <item>Измерение параметров электрического тока</item>
+        <item>Электромонтажные работы</item>
+        <item>Радиодетали и электронные компоненты</item>
+        <item>Управление освещением</item>
+        <item>Металлоискатели и детекторы проводки</item>
+    </string-array>
+    <string-array name="accessoriesForHouseGardenArray">
+        <item>Аксессуары для минимоек</item>
+        <item>Аксессуары для надувной мебели</item>
+        <item>Аксессуары для биотуалетов и септиков</item>
+        <item>Аксессуары для ремонтной техники</item>
+        <item>Аксессуары для печей и каминов</item>
+        <item>Аксессуары для садовой техники</item>
+        <item>Аксессуары для барбекю</item>
+        <item>Аксессуары для пикника</item>
+        <item>Аксессуары для плавания</item>
+        <item>Аксессуары для бассейнов</item>
+        <item>Аксессуары для минимоек</item>
+        <item>Аксессуары для надувной мебели</item>
+
+    </string-array>
+
+    <!--   gardenEquipmentsArray  -->
+    <string-array name="gardenEquipmentsArray">
+        <item>Садоводство и озеленение</item>
+        <item>Садовая техника</item>
+        <item>Полив и орошение</item>
+        <item>Все для сада</item>
+        <item>Кемпинг</item>
+        <item>Товары для отдыха и пикника</item>
+        <item>Сауны и бани</item>
+        <item>Мебель и декор</item>
+        <item>Детская площадка</item>
+        <item>Аксессуары сада</item>
+
+    </string-array>
+    <string-array name="gardenAndPlantsArray">
+        <item>Теплицы и парники</item>
+        <item>Садовый инструмент</item>
+        <item>Все для полива</item>
+        <item>Садовый инвентарь</item>
+        <item>Семена</item>
+        <item>Газоны</item>
+        <item>Посадочный материал</item>
+        <item>Удобрения</item>
+        <item>Отпугиватели и ловушки для птиц и грызунов</item>
+
+    </string-array>
+
+    <string-array name="gardenTechnicsArray">
+        <item>Триммеры и косы</item>
+        <item>Газонокосилки</item>
+        <item>Цепные пилы</item>
+        <item>Кусторезы</item>
+        <item>Садовые пылесосы</item>
+        <item>Культиваторы</item>
+        <item>Измельчители</item>
+        <item>Снегоуборщик </item>
+        <item>Мойки высокого давления</item>
+        <item>Газонокосилки и триммеры</item>
+        <item>Мотоблоки и культиваторы</item>
+        <item>Мини-тракторы</item>
+        <item>Водяные насосы</item>
+        <item>Вертикуттеры</item>
+        <item>Воздуходувки</item>
+        <item>Измельчители мусора</item>
+        <item>Оснастка к садовой технике</item>
+        <item>Бензопилы</item>
+    </string-array>
+    <string-array name="irrigationArray">
+        <item>Насосы</item>
+        <item>Мотопомпы</item>
+        <item>Дождеватели</item>
+        <item>Опрыскиватели</item>
+        <item>Пистолеты для полива</item>
+        <item>Системы полива</item>
+        <item>Садовые шланги</item>
+        <item>Коннекторы</item>
+        <item>Катушки и тележки для шлангов</item>
+        <item>Баки для воды, ведра, лейки</item>
+
+    </string-array>
+    <string-array name="allforGardenArray">
+        <item>Садовый инвентарь</item>
+        <item>Защита в саду</item>
+        <item>Парники и теплицы</item>
+        <item>Все для рассады</item>
+        <item>Уход за растениями</item>
+        <item>Садовый декор</item>
+
+    </string-array>
+    <string-array name="kempingArray">
+        <item>Биотуалеты</item>
+        <item>Надувные кровати</item>
+        <item>Бассейны</item>
+        <item>Мангалы и барбекю</item>
+
+    </string-array>
+    <string-array name="goodsForRestPicnicArray">
+        <item>Садовая мебель</item>
+        <item>Грили, мангалы, шашлычницы</item>
+        <item>Аксессуары для пикника</item>
+
+        <item>Тенты</item>
+        <item>Бадминтон</item>
+        <item>Настольный теннис</item>
+
+        <item>Моноциклы</item>
+
+    </string-array>
+    <string-array name="saunaAndBathroomArray">
+        <item>Сауны и бани</item>
+        <item>Инфракрасные сауны</item>
+        <item>Печи для бань</item>
+        <item>Дымоходы</item>
+        <item>Двери</item>
+        <item>Бочки и купели</item>
+        <item>Парогенераторы</item>
+        <item>Камни для печей</item>
+
+    </string-array>
+    <string-array name="furnitureAndDecorArray">
+        <item>Садовая мебель</item>
+        <item>Плетеная мебель</item>
+        <item>Уличные светильники</item>
+        <item>Садовый декор</item>
+    </string-array>
+    <string-array name="childrenPlaceArray">
+        <item>Игровые домики и палатки</item>
+        <item>Игровые комплексы и горки</item>
+        <item>Качели</item>
+        <item>Песочницы и аксессуары</item>
+        <item>Батуты</item>
+        <item>Надувные бассейны</item>
+        <item>Все товары</item>
+
+    </string-array>
+    <string-array name="gardenAccessoriesArray">
+        <item>Аксессуары для минимоек</item>
+        <item>Аксессуары для надувной мебели</item>
+        <item>Аксессуары для биотуалетов и септиков</item>
+        <item>Аксессуары для садовой техники</item>
+        <item>Аксессуары для барбекю</item>
+        <item>Аксессуары для пикника</item>
+
+    </string-array>
+
+
+    <!--    kitchenEquipmentArray                      -->
+
+    <string-array name="kitchenEquipmentArray">
+        <item>Холодильники и морозильники</item>
+        <item>Крупная kухонная техника</item>
+        <item>Мелкая бытовая техника</item>
+        <item>Посуда</item>
+        <item>Аксессуары</item>
+
+    </string-array>
+    <string-array name="fridgeArray">
+        <item>Холодильники</item>
+        <item>Холодильники с верхней морозильной камерой</item>
+        <item>Холодильники с нижней морозильной камерой</item>
+        <item>Однодверные холодильники</item>
+        <item>Многодверные холодильники</item>
+        <item>Холодильники sidi-by-side</item>
+        <item>Морозильные камеры</item>
+        <item>Морозильные лари</item>
+        <item>Винные шкафы</item>
+        <item>Портативные холодильники</item>
+    </string-array>
+    <string-array name="largeKitchenTechArray">
+        <item>Электрические плиты</item>
+        <item>Газовые плиты</item>
+        <item>Микроволновые печи</item>
+        <item>Плиты настольные </item>
+        <item>Встраиваемые посудомоечные машины</item>
+        <item>Встраиваемые электричесие плиты </item>
+        <item>Встраиваемые газовые плиты</item>
+        <item>Посудомоечные машины</item>
+        <item>Вытяжки</item>
+        <item>Кухонные машины</item>
+        <item>Мясорубки</item>
+        <item>Вафельницы и сендвичницы</item>
+        <item>Хлебопечи</item>
+
+    </string-array>
+    <string-array name="smallCommonTechArray">
+        <item>Кофемашины</item>
+        <item>Кофеварки</item>
+        <item>Кофемолки</item>
+        <item>Миксеры</item>
+        <item>Кухонные комбайны</item>
+        <item>Блендеры</item>
+        <item>Мясорубки</item>
+        <item>Соковыжималки</item>
+        <item>Электрические чайники</item>
+        <item>Мультиварки</item>
+        <item>Мини-печи</item>
+        <item>Пароварки</item>
+        <item>Электрогрили и аэрогрили</item>
+        <item>Термопоты</item>
+        <item>Измельчители</item>
+        <item>Тостеры</item>
+        <item>Сифоны</item>
+    </string-array>
+    <string-array name="dishesArray">
+        <item>Набор посуды</item>
+        <item>Сковороды</item>
+        <item>Кастрюли</item>
+        <item>Ковши</item>
+        <item>Контейнеры для продуктов</item>
+    </string-array>
+    <string-array name="kitchenAccessoriesArray">
+        <item>Кухонные принадлежности </item>
+        <item>Для микроволновых печей</item>
+        <item>Для кухонных плит</item>
+        <item>Изотермические товары </item>
+        <item>Насадки и наборы </item>
+        <item>Чистящие средства </item>
+        <item>Ножи и столовые приборы</item>
+        <item>Весы кухонные</item>
+        <item>Для холодильников</item>
+        <item>Для вытяжек</item>
+        <item>Для посудомоечных машин</item>
+        <item>Фильтры для воды</item>
+    </string-array>
+
+    <!--         technicsForHouseArray     -->
+    <string-array name="technicsForHouseArray">
+        <item>Стиральные и сушильные машины</item>
+        <item>Малая бытовая техника</item>
+        <item>Уход за полом</item>
+        <item>Климатическая техника</item>
+        <item>Аксессуары для бытовой техники</item>
+        <item>Водонагреватели</item>
+        <item>Товары для ремонта</item>
+        <item>Освещение</item>
+        <item>Часы</item>
+    </string-array>
+    <string-array name="washAnddryArray">
+        <item>Узкие стиральные машины</item>
+        <item>Стандартные стиральные машина </item>
+        <item>Стиральные машина с сушкой</item>
+        <item>Компактные стиральные машины</item>
+        <item>Мини стиральные машины</item>
+        <item>Компактные сушильные машины</item>
+    </string-array>
+    <string-array name="smallCommonMachenesArray">
+        <item>Утюги с парогенератором</item>
+        <item>Отпариватели</item>
+        <item>Утюги</item>
+        <item>Швейные машины</item>
+        <item>Оверлоки</item>
+        <item>Аксессуары для швейных машин</item>
+        <item>Автомобильные холодильники</item>
+        <item>Паровые очистители</item>
+    </string-array>
+    <string-array name="floorEquipmentArray">
+        <item>Пылесосы с пылесборником</item>
+        <item>Пылесосы с контейнером для пыли</item>
+        <item>Моющие пылесосы</item>
+        <item>Роботы – пылесосы</item>
+        <item>Пылесосы с водяным фильтором</item>
+        <item>Аккумуляторные пылесосы</item>
+        <item>Автомобильные пылесосы</item>
+        <item>Стеклоочистители</item>
+    </string-array>
+    <string-array name="climaticTechArray">
+        <item>Кондиционеры</item>
+        <item>Сплит-системы</item>
+        <item>Напольные мобильные кондиционеры</item>
+        <item>Вентиляторы</item>
+        <item>Водонагреватели</item>
+        <item>Увлажнители и очистители воздуха</item>
+        <item>Обогревательные приборы</item>
+        <item>Метеостанции</item>
+
+    </string-array>
+    <string-array name="accessoriesForCommonTechArray">
+        <item>Для пылесосов</item>
+        <item>Для стиральных машин</item>
+        <item>Для утюгов</item>
+        <item>Батарейки и аккумуляторы</item>
+        <item>Сетевые фильтры и удлинители</item>
+        <item>Прочие хозяйственные товары</item>
+        <item>Уход за вещами</item>
+        <item>Гладильные доски</item>
+        <item>Для глажения</item>
+        <item>Для очистителей и увлажнителей</item>
+        <item>Для швейных машин</item>
+        <item>Другие товары и аксессуары для дома</item>
+
+    </string-array>
+    <string-array name="boilersArray">
+        <item>Газовые водонагреватели</item>
+        <item>Электронные водонагреватели</item>
+        <item>Накопительные водонагреватели</item>
+        <item>Проточные водонагреватели </item>
+    </string-array>
+    <string-array name="gearsForRemountArray">
+        <item>Электроинструменты </item>
+        <item>Ручные инструменты </item>
+        <item>Аксессуары для инструментов </item>
+    </string-array>
+    <string-array name="illuminateArray">
+        <item>Лампы</item>
+        <item>Светильники </item>
+        <item>Электронные свечи</item>
+
+    </string-array>
+    <string-array name="clockArray">
+        <item>Настенные </item>
+        <item>Будильники </item>
+
+    </string-array>
+
+
+    <string-array name="otherCloth">
+        <item>Одежда</item>
+    </string-array>
+
+    <string-array name="upForManArray">
+        <item>Футболки</item>
+        <item>Поло</item>
+        <item>Майки</item>
+        <item>Рубашки</item>
+        <item>Пуловеры и кардиганы</item>
+        <item>Белье</item>
+    </string-array>
+
+    <string-array name="bottomForMan">
+        <item>Повседневные штаны </item>
+        <item>Джинсы</item>
+        <item>Шорты и бермуды</item>
+        <item>Нижнее бельё</item>
+        <item>Одежда для купания</item>
+        <item>Носки</item>
+        <item>Теплое белье</item>
+    </string-array>
+
+    <string-array name="jacetsAndCoatsArray">
+        <item>Куртки </item>
+        <item>Пальто</item>
+        <item>Плащи</item>
+        <item>Толстовки</item>
+        <item>Джинсовые куртки</item>
+        <item>Спортивные куртки</item>
+        <item>Ветровки</item>
+        <item>Кожанные куртки</item>
+        <item>Пуховики и парки </item>
+        <item>Жилеты</item>
+    </string-array>
+
+    <string-array name="suitAndBlazerArray">
+        <item>Пиджаки</item>
+        <item>Костюмы</item>
+    </string-array>
+
+    <string-array name="sportWearArray">
+        <item>Куртки</item>
+        <item>брюки</item>
+        <item>Куртка с капюшоном</item>
+        <item>Спортивный костюм </item>
+        <item>Брюки с начесоми</item>
+    </string-array>
+
+    <string-array name="accessoriesForManArray">
+        <item>Головные уборы (бейсболки, шапки )</item>
+        <item>Шарфы</item>
+        <item>Перчатки</item>
+        <item>Ремни и пояса</item>
+        <item>Сумки и портмоне</item>
+        <item>Галстуки и платки</item>
+        <item>Мужские украшения</item>
+        <item>Очки(Авиаторы, вайфареры, квадратная оправа, круглая оправа, овальная оправа)</item>
+        <item>Часы </item>
+        <item>Браслеты</item>
+    </string-array>
+
+    <string-array name="indoorClothingArray">
+        <item>Халаты</item>
+        <item>Брюки</item>
+        <item>Пижамы</item>
+    </string-array>
+
+    <string-array name="tranksAndShortArray">
+        <item>Плавки</item>
+        <item>Брюки</item>
+        <item>Пижамы</item>
+    </string-array>
+
+    <string-array name="category_spinner_array">
+        <item>ФИЛЬТР</item>
+        <item>цена (по возрастанию)</item>
+        <item>цена (по убыванию)</item>
+        <item>число заказов</item>
+        <item>число бронирование</item>
+        <item>рейтинг продавца</item>
+        <item>от нового к старому</item>
+        <item>акция, скидка, распродажа</item>
+        <item>оцененный товар</item>
+    </string-array>
+
+    <string-array name="bottomForWomanArray">
+        <item>Юбки (Летние юбки, Мини (короткие),Миди (средней длины),Макси (длинные),Джинсовые юбки,Теплые и вязаные юбки,
+Юбки-карандаш (прямые))</item>
+        <item>Шорты</item>
+        <item>Джинсы (Джинсовые шорты и бермуды,Джинсы-капри,Джинсы)</item>
+        <item>Брюки и капри</item>
+        <item>Леггинсы</item>
+    </string-array>
+
+    <string-array name="topForWomanArray">
+        <item>Пальто</item>
+        <item>Ветровки</item>
+        <item>Плащи и тренчкоты</item>
+        <item>Теплые куртки</item>
+        <item>Парки</item>
+        <item>Тренчи</item>
+        <item>Спортивные куртки</item>
+        <item>Джинсовые куртки</item>
+        <item>Жилеты </item>
+        <item>Толстовки</item>
+    </string-array>
+
+    <string-array name="babiesGoodArray">
+        <item>Белье, купальники</item>
+        <item>Боди, песочники</item>
+        <item>Брюки</item>
+        <item>Верхняя одежда(куртки, пальто, плащи)</item>
+        <item>Комбинезоны</item>
+        <item>Конверты</item>
+        <item>Комплекты</item>
+        <item>Костюмы</item>
+        <item>Кофточки</item>
+        <item>Кофты</item>
+        <item>Носки, колготки</item>
+        <item>Одежда для дома</item>
+        <item>Одежда для крещения</item>
+        <item>Платья, юбки</item>
+        <item>Ползунки</item>
+        <item>Футболки</item>
+        <item>Шорты</item>
+
+        <item>Обувь</item>
+    </string-array>
+
+    <string-array name="girlieGoodsArray">
+        <item>Белье, носки, колготки</item>
+        <item>Блузки, туники</item>
+        <item>Брюки и шорты</item>
+        <item>Верхняя одежда(куртки, пальто, плащи)</item>
+        <item>Водолазки, лонгсливы</item>
+        <item>Джинсы</item>
+        <item>Комбинезоны</item>
+        <item>Костюмы, комплекты</item>
+        <item>Кофты, жакеты</item>
+        <item>Купальники</item>
+        <item>Одежда для дома</item>
+        <item>Платья</item>
+        <item>Пуловеры, джемперы</item>
+        <item>Свитшоты, толстовки</item>
+        <item>Топы</item>
+        <item>Футболки</item>
+        <item>Шорты, бермуды</item>
+        <item>Юбки</item>
+        <item>Обувь</item>
+    </string-array>
+
+    <string-array name="girlGoodsArray">
+        <item>Белье, одежда для дома</item>
+        <item>Блузки, туники</item>
+        <item>Брюки, шорты</item>
+        <item>Верхняя одежда(куртки, пальто, плащи)</item>
+        <item>Джинсы</item>
+        <item>Кофты</item>
+        <item>Платья</item>
+        <item>Пуловеры, свитеры</item>
+        <item>Футболки, топы</item>
+        <item>Юбки</item>
+        <item>Болеро</item>
+        <item>Обувь</item>
+    </string-array>
+
+
+
+    <string-array name="boyGoodsArray">
+        <item>Белье</item>
+        <item>Брюки</item>
+        <item>Верхняя одежда (куртки, пальто, плащи)</item>
+        <item>Водолазки, лонгсливы</item>
+        <item>Джинсы</item>
+        <item>Жилеты</item>
+        <item>Карнавальные костюмы</item>
+        <item>Костюмы, жилеты, комбинезоны</item>
+        <item>Кофты</item>
+        <item>Носки, колготки</item>
+        <item>Одежда для дома</item>
+        <item>Плавки</item>
+        <item>Пуловеры, джемперы</item>
+        <item>Рубашки</item>
+        <item>Свитшоты, толстовки</item>
+        <item>Футболки</item>
+        <item>Шорты, бермуды</item>
+        <item>Обувь</item>
+
+
+    </string-array>
+
+    <string-array name="juniorGoodsArray">
+        <item>Белье, одежда для дома</item>
+        <item>Брюки, шорты</item>
+        <item>Верхняя одежда (Пальто, куртки, плащи)</item>
+        <item>Джинсы</item>
+        <item>Костюмы и жилеты</item>
+        <item>Кофты</item>
+        <item>Пуловеры, свитеры</item>
+        <item>Рубашки</item>
+        <item>Футболки и майки</item>
+        <item>Наборы и комплекты</item>
+        <item>Головные уборы (шапки, бейсболка)</item>
+        <item>Обувь</item>
+    </string-array>
+
+    <string-array name="schoolGoodArray">
+        <item>Обувь для девочек </item>
+        <item>Обувь для мальчиков </item>
+        <item>Одежда для девочек</item>
+        <item>Одежда для мальчиков</item>
+        <item>Спорт</item>
+        <item>Школьные рюкзаки</item>
+        <item>Школьные принадлежности</item>
+    </string-array>
+    <string-array name="childAccessoriesArray">
+        <item>Очки</item>
+        <item>Сумки</item>
+        <item>Ремни</item>
+        <item>Кошелек</item>
+        <item>обувь</item>
+    </string-array>
+
+
+
+    <string-array name="weddingDressArray">
+        <item>Свадебные платья</item>
+        <item>Вечерние платья</item>
+        <item>Выпускные платья</item>
+        <item>Платья подружек невесты</item>
+        <item>Коктельные платья </item>
+    </string-array>
+
+    <string-array name="pregnantWearArray">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="womanAccessoryArray">
+        <item>Головные уборы</item>
+        <item>Шарфы, платки, перчатки</item>
+        <item>Пояса и Ремни</item>
+        <item>Солнцезащитные очки</item>
+        <item>Бейсболки</item>
+    </string-array>
+
+    <string-array name="womanIndoorClothArray">
+        <item>Кофточки и топы</item>
+        <item>Пижамы </item>
+        <item>Ночные сорочки</item>
+        <item>Халаты </item>
+        <item>Брюки </item>
+        <item>Домашняя одежда</item>
+    </string-array>
+
+    <string-array name="womanSportWearArray">
+        <item>Куртки и пуловеры</item>
+        <item>Спортивные брюки</item>
+        <item>Спортивные костюмы</item>
+        <item>Футболки и топы</item>
+        <item>Обувь и аксессуары</item>
+        <item>Домашняя одежда</item>
+    </string-array>
+
+    <string-array name="womanUnderClothArrray">
+        <item>Бюстгальтеры</item>
+        <item>Неглиже</item>
+        <item>Купальники</item>
+        <item>Корсажи,майки,бодиы</item>
+        <item>Комплекты белья </item>
+        <item>Корректирующее белье</item>
+        <item>Чулки и носки </item>
+        <item>Аксессуары</item>
+    </string-array>
+
+    <string-array name="popularForWomanArray">
+        <item>Платья (летние платья,
+            повседневные платья, пляжные,
+            Короткие платья, Длинные платья(макси),
+            Вечерние и офисные платья, Джинсовые платья,
+            Трикотажные платья, Теплые и вязанные платья.)</item>
+        <item>Блузки и туники (блузки, кофты, рубашки, туники, джинсовые блузки и рубашки)</item>
+        <item>Кардиганы и пуловеры(болеро, кардиганы, пуловеры, водолазки, жилеты и безрукавки)</item>
+        <item>Футболки и топы (топы, футболки, поло)</item>
+        <item>Майки</item>
+        <item>Комбинезоны</item>
+        <item>Блейзеры, жакеты, костюмы(блейзеры и жакеты, жилеты, деловые костюмы, джинсовые жакеты и жилетки )</item>
+    </string-array>
+    <string name="title_activity_base">BaseActivity</string>
+    
+    <string-array name="age_from">
+        <item>От</item> <item>От 12</item> <item>От 13</item> <item>От 14</item> <item>От 15</item> <item>От 16</item> <item>От 17</item>
+        <item>От 18</item> <item>От 19</item> <item>От 20</item> <item>От 21</item> <item>От 22</item> <item>От 23</item> <item>От 24</item>
+        <item>От 25</item> <item>От 26</item> <item>От 27</item> <item>От 28</item> <item>От 29</item> <item>От 30</item> <item>От 31</item>
+        <item>От 32</item> <item>От 33</item> <item>От 34</item> <item>От 35</item> <item>От 36</item> <item>От 37</item> <item>От 38</item>
+        <item>От 39</item> <item>От 40</item> <item>От 41</item> <item>От 42</item> <item>От 43</item> <item>От 44</item> <item>От 45</item>
+        <item>От 46</item> <item>От 47</item> <item>От 48</item> <item>От 49</item> <item>От 50</item> <item>От 51</item> <item>От 52</item>
+        <item>От 53</item> <item>От 54</item> <item>От 55</item> <item>От 56</item> <item>От 57</item> <item>От 58</item> <item>От 59</item>
+        <item>От 60</item> <item>От 61</item> <item>От 62</item> <item>От 63</item> <item>От 64</item> <item>От 65</item> <item>От 66</item>
+        <item>От 67</item> <item>От 68</item> <item>От 69</item> <item>От 70</item> <item>От 71</item> <item>От 72</item> <item>От 73</item>
+        <item>От 74</item> <item>От 75</item> <item>От 76</item> <item>От 77</item> <item>От 78</item> <item>От 79</item> <item>От 80</item>
+    </string-array>
+
+    <string-array name="age_to">
+        <item>До</item> <item>До 12</item> <item>До 13</item> <item>До 14</item> <item>До 15</item> <item>До 16</item> <item>До 17</item>
+        <item>До 18</item> <item>До 19</item> <item>До 20</item> <item>До 21</item> <item>До 22</item> <item>До 23</item> <item>До 24</item>
+        <item>До 25</item> <item>До 26</item> <item>До 27</item> <item>До 28</item> <item>До 29</item> <item>До 30</item> <item>До 31</item>
+        <item>До 32</item> <item>До 33</item> <item>До 34</item> <item>До 35</item> <item>До 36</item> <item>До 37</item> <item>До 38</item>
+        <item>До 39</item> <item>До 40</item> <item>До 41</item> <item>До 42</item> <item>До 43</item> <item>До 44</item> <item>До 45</item>
+        <item>До 46</item> <item>До 47</item> <item>До 48</item> <item>До 49</item> <item>До 50</item> <item>До 51</item> <item>До 52</item>
+        <item>До 53</item> <item>До 54</item> <item>До 55</item> <item>До 56</item> <item>До 57</item> <item>До 58</item> <item>До 59</item>
+        <item>До 60</item> <item>До 61</item> <item>До 62</item> <item>До 63</item> <item>До 64</item> <item>До 65</item> <item>До 66</item>
+        <item>До 67</item> <item>До 68</item> <item>До 69</item> <item>До 70</item> <item>До 71</item> <item>До 72</item> <item>До 73</item>
+        <item>До 74</item> <item>До 75</item> <item>До 76</item> <item>До 77</item> <item>До 78</item> <item>До 79</item> <item>До 80</item>
+    </string-array>
+
+
+
+    <string-array name="mobilesArray">
+        <item>Acer</item>
+        <item>Alcatel</item>
+        <item>Asus</item>
+        <item>Blackberry</item>
+        <item>BQ</item>
+        <item>Explay</item>
+        <item>Fly</item>
+        <item>HTC</item>
+        <item>Huawei</item>
+        <item>iPhone</item>
+        <item>Lenovo</item>
+        <item>LG</item>
+        <item>Keneksi</item>
+        <item>Meizu</item>
+        <item>Microsoft</item>
+        <item>Motorola</item>
+        <item>Nokia</item>
+        <item>Nomi</item>
+        <item>Panasonic</item>
+        <item>Philips</item>
+        <item>Qumo</item>
+        <item>Samsung</item>
+        <item>Sony</item>
+        <item>THL</item>
+        <item>Vertu</item>
+        <item>ZTE</item>
+        <item>Xiaomi</item>
+        <item>Yotaphone</item>
+        <item>ДРУГИЕ</item>
+
+
+    </string-array>
+
+
+</resources>
+
