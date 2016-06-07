@@ -155,16 +155,16 @@ public class UsersSearchAdapter extends BaseExpandableListAdapter {
 
         holder.editTextAgeFrom.setSelection(userGlobalClass.getAgeFrom());
         holder.editTextAgeFrom.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                userGlobalClass.setAgeFrom(position);
-            }
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        userGlobalClass.setAgeFrom(position);
+                    }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
 
-            }
-        });
+                    }
+                });
 
         holder.editTextAgeTo.setSelection(userGlobalClass.getAgeTo());
         holder.editTextAgeTo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

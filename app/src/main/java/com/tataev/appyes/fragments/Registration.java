@@ -343,7 +343,7 @@ public class Registration extends Fragment implements View.OnClickListener{
                         Toast.makeText(getActivity().getApplicationContext(), "User successfully registered!", Toast.LENGTH_LONG).show();
 
                         // Launch login activity
-                        fragment = new UserData();
+                        fragment = new Profile();
                         Defaults.replaceFragment(fragment, getActivity());
                     } else {
 

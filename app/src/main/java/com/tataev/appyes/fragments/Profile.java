@@ -288,8 +288,8 @@ public class Profile extends Fragment implements View.OnClickListener{
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
-//                        Toast.makeText(getActivity().getApplicationContext(),
-//                                errorMsg, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity().getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {
                     // JSON error

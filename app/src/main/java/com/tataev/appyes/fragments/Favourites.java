@@ -119,14 +119,14 @@ public class Favourites extends Fragment implements View.OnClickListener{
                 Defaults.replaceFragment(fragment, getActivity());
                 break;
             case R.id.nearby_favor_tab:
-              //  fragment = new Nearby();
-               // Defaults.replaceFragment(fragment, getActivity());
-                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivity(mapIntent);
-                }
+                fragment = new Nearby();
+                Defaults.replaceFragment(fragment, getActivity());
+//                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
+//                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                mapIntent.setPackage("com.google.android.apps.maps");
+//                if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+//                    startActivity(mapIntent);
+//                }
                 break;
             case R.id.novelty_favor_tab:
                 fragment = new Novelty();

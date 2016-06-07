@@ -44,7 +44,7 @@
     <string name="name">Имя</string>
     <string name="surname">Фамилия</string>
     <string name="login">Логин</string>
-    <string name="reg_password"><font size="12">Пароль (7 или более символов)</font></string>
+    <string name="reg_password">Пароль (от 7 символов)</string>
     <string name="security">Защита</string>
     <string name="address">Адрес доставки</string>
     <string name="repeat_pswd">Подтвердите пароль</string>
@@ -811,18 +811,18 @@
     </string-array>
 
     <string-array name="months">
-        <item>Январь</item>
-        <item>Февраль</item>
-        <item>Март</item>
-        <item>Апрель</item>
-        <item>Май</item>
-        <item>Июнь</item>
-        <item>Июль</item>
-        <item>Август</item>
-        <item>Сентябрь</item>
-        <item>Октябрь</item>
-        <item>Ноябрь</item>
-        <item>Декабрь</item>
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
     </string-array>
 
     <string-array name="years">

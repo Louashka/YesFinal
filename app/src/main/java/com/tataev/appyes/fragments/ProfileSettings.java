@@ -1,6 +1,7 @@
 package com.tataev.appyes.fragments;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
@@ -12,6 +13,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.InputType;
 import android.util.Base64;
 import android.util.Log;
 import android.util.Patterns;
@@ -20,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -51,8 +54,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -85,6 +91,10 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
     private Uri mImageCaptureUri;
     private ImageLoader mImageLoader;
     private File imageFile;
+    private String[] months;
+    private int calendarYear;
+    private int calendarMonth;
+    private int calendarDay;
     private static final int RESULT_LOAD_IMAGE = 1;
     private static final int CROP_FROM_CAMERA = 2;
 
@@ -92,9 +102,7 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
     private ImageView imageLogoSettings;
     private EditText editNameSettings;
     private EditText editSurnameSettings;
-    private EditText daySettings;
-    private Spinner spinnerMonthsSettings;
-    private EditText yearSettings;
+    private EditText dateSettings;
     private RadioGroup radioGroupSettings;
     private int radioMale = R.id.radioMaleSetting;
     private int radioFemale = R.id.radioFemaleSettings;
@@ -105,7 +113,9 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
     private EditText editCodeSettings;
     private TextView textCodeSettings;
     private Button buttonSave;
-
+    private SimpleDateFormat dateFormatter;
+    private DatePickerDialog datePickerDialog;
+    private Calendar birthDate;
 
     public ProfileSettings() {
         // Required empty public constructor
@@ -147,9 +157,7 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
         imageLogoSettings = (ImageView)rootView.findViewById(R.id.imageLogoSettings);
         editNameSettings = (EditText)rootView.findViewById(R.id.editNameSettings);
         editSurnameSettings = (EditText)rootView.findViewById(R.id.editSurnameSettings);
-        daySettings = (EditText)rootView.findViewById(R.id.daySettings);
-        spinnerMonthsSettings = (Spinner)rootView.findViewById(R.id.spinnerMonthsSettings);
-        yearSettings = (EditText)rootView.findViewById(R.id.yearSettings);
+        dateSettings = (EditText)rootView.findViewById(R.id.dateSettings);
         radioGroupSettings = (RadioGroup)rootView.findViewById(R.id.radioGroupSettings);
         editAddressSettings = (EditText)rootView.findViewById(R.id.editAddressSettings);
         editEmailSettings = (EditText)rootView.findViewById(R.id.editEmailSettings);
@@ -158,6 +166,10 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
         textCodeSettings = (TextView)rootView.findViewById(R.id.textCodeSettings);
         editCodeSettings = (EditText)rootView.findViewById(R.id.editCodeSettings);
         buttonSave = (Button)rootView.findViewById(R.id.buttonSave);
+        dateSettings.setInputType(InputType.TYPE_NULL);
+
+        dateFormatter = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+        birthDate = Calendar.getInstance();
 
 //        imageLogoSettings.setDefaultImageResId(R.drawable.reg_logo);
 //        imageLogoSettings.setErrorImageResId(R.drawable.reg_logo);
@@ -186,6 +198,7 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
         String recommendations = user.get("recommendations");
         String photo = user.get("photo");
 
+        months = getResources().getStringArray(R.array.months);
         if (!photo.isEmpty()){
             try {
                 byte[] decodedString = Base64.decode(photo, Base64.DEFAULT);
@@ -233,14 +246,44 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
 //            imageLogoSettings.setImageUrl(url, mImageLoader);
         }
 
+        Calendar newCalendar = Calendar.getInstance();
         if (birthday != null) {
             String year = birthday.split("-")[0];
             String month = birthday.split("-")[1];
             String day = birthday.split("-")[2];
-            daySettings.setText(day);
-            yearSettings.setText(year);
-            spinnerMonthsSettings.setSelection(Integer.parseInt(month) - 1);
+            if (birthday.equals("0000-00-00")) {
+                dateSettings.setText("Выберите дату");
+                calendarYear = newCalendar.get(Calendar.YEAR);
+                calendarMonth = newCalendar.get(Calendar.MONTH);
+                calendarDay = newCalendar.get(Calendar.DAY_OF_MONTH);
+            } else {
+                dateSettings.setText(day + " " + months[Integer.parseInt(month)] + " " + year);
+                calendarYear = Integer.parseInt(year);
+                calendarMonth = Integer.parseInt(month);
+                calendarDay = Integer.parseInt(day);
+            }
+            birthDate.set(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
+        } else {
+            calendarYear = newCalendar.get(Calendar.YEAR);
+            calendarMonth = newCalendar.get(Calendar.MONTH);
+            calendarDay = newCalendar.get(Calendar.DAY_OF_MONTH);
         }
+
+        datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
+
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                birthDate.set(year, monthOfYear, dayOfMonth);
+                dateSettings.setText(dayOfMonth + " " + months[monthOfYear] + " " + year);
+            }
+
+        },calendarYear, calendarMonth, calendarDay);
+
+        dateSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                datePickerDialog.show();
+            }
+        });
 
         editNameSettings.setText(name);
         editSurnameSettings.setText(surname);
@@ -361,8 +404,7 @@ public class ProfileSettings extends Fragment implements View.OnClickListener{
                 String email = editEmailSettings.getText().toString().trim();
                 String name = editNameSettings.getText().toString().trim();
                 String surname = editSurnameSettings.getText().toString().trim();
-                String birthday = yearSettings.getText().toString().trim() + "-" + String.valueOf(spinnerMonthsSettings.getSelectedItemPosition()+ 1)
-                        + "-" + daySettings.getText().toString().trim();
+                String birthday = dateFormatter.format(birthDate.getTime()).trim();
                 String gender = "not define";
                 int id = radioGroupSettings.getCheckedRadioButtonId();
                 if (id == radioMale) gender = "m";

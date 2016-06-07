@@ -78,21 +78,21 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-        final MenuItem navigation = menu.findItem(R.id.navigation);
-        navigation.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-
-                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(mapIntent);
-                }
-
-                return true;
-            }
-        });
+//        final MenuItem navigation = menu.findItem(R.id.navigation);
+//        navigation.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+//            @Override
+//            public boolean onMenuItemClick(MenuItem item) {
+//
+//                Uri gmmIntentUri =  Uri.parse("geo:0,0?q=a+Grozniy");
+//                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                mapIntent.setPackage("com.google.android.apps.maps");
+//                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(mapIntent);
+//                }
+//
+//                return true;
+//            }
+//        });
 
         return true;
     }
