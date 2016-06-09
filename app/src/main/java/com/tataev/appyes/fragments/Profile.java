@@ -7,7 +7,9 @@ import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +47,7 @@ import java.util.Random;
  * Use the {@link Profile#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Profile extends Fragment implements View.OnClickListener{
+public class Profile extends Fragment implements View.OnClickListener, MainActivity.OnBackPressedListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -60,6 +62,7 @@ public class Profile extends Fragment implements View.OnClickListener{
     private SQLiteHandlerUser db;
     private String codeOutput;
     private SharedPreferences sPref;
+    private AppController userGlobalClass;
     private final String UNIQUE_ID = "unique_id";
 
     private Button buttonReg;
@@ -110,6 +113,7 @@ public class Profile extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
         ((MainActivity)getActivity()).getSupportActionBar().setTitle("Профиль");
+        userGlobalClass = (AppController)getActivity().getApplicationContext();
 
         // Progress dialog
         pDialog = new ProgressDialog(getActivity());
@@ -146,6 +150,7 @@ public class Profile extends Fragment implements View.OnClickListener{
         buttonReg.setOnClickListener(this);
         buttonEnter.setOnClickListener(this);
         textRefreshImage.setOnClickListener(this);
+
         return rootView;
     }
 
@@ -164,6 +169,8 @@ public class Profile extends Fragment implements View.OnClickListener{
                 textCode.setText(codeOutput);
                 break;
             case R.id.buttonReg:
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragment = new Registration();
                 Defaults.replaceFragment(fragment, getActivity());
                 break;
@@ -192,6 +199,12 @@ public class Profile extends Fragment implements View.OnClickListener{
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = new MenuItems();
+        Defaults.replaceFragment(fragment, getActivity());
     }
 
 //    @Override

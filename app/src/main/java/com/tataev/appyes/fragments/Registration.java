@@ -51,7 +51,7 @@ import java.util.Map;
  * Use the {@link Registration#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Registration extends Fragment implements View.OnClickListener{
+public class Registration extends Fragment implements View.OnClickListener, MainActivity.OnBackPressedListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -400,6 +400,12 @@ public class Registration extends Fragment implements View.OnClickListener{
     private void hideDialog() {
         if (pDialog.isShowing())
             pDialog.dismiss();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = new Profile();
+        Defaults.replaceFragment(fragment, getActivity());
     }
 
 

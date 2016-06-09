@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Fragment menuFrag;
     private FragmentTransaction fTrans;
     private FragmentManager fragmentManager;
+    private OnBackPressedListener backPressedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,25 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        FragmentManager fm = getSupportFragmentManager();
+        backPressedListener = null;
+        for (Fragment fragment: fm.getFragments()) {
+            if (fragment instanceof OnBackPressedListener) {
+                backPressedListener = (OnBackPressedListener) fragment;
+                break;
+            }
+        }
+
+        if (backPressedListener != null) {
+            backPressedListener.onBackPressed();
+            fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     @Override
@@ -128,5 +148,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public interface OnBackPressedListener {
+        public void onBackPressed();
+    }
+
 
 }

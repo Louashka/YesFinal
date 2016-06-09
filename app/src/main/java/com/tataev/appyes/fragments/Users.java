@@ -414,8 +414,8 @@ public class Users extends Fragment implements View.OnClickListener{
 
                         // Error occurred in registration. Get the error
                         // message
-                        Toast.makeText(getActivity().getApplicationContext(),
-                                "error loading", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getActivity().getApplicationContext(),
+//                                "error loading", Toast.LENGTH_LONG).show();
 
                     }
 
@@ -428,8 +428,8 @@ public class Users extends Fragment implements View.OnClickListener{
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Loading Error: " + error.getMessage());
-                Toast.makeText(getActivity().getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        error.getMessage(), Toast.LENGTH_LONG).show();
             }
 
         }) {
@@ -646,8 +646,8 @@ public class Users extends Fragment implements View.OnClickListener{
 
                         // Error occurred in registration. Get the error
                         // message
-                        Toast.makeText(getActivity().getApplicationContext(),
-                                "error loading", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getActivity().getApplicationContext(),
+//                                "error loading", Toast.LENGTH_LONG).show();
 
                     }
                 } catch (JSONException e) {
@@ -661,8 +661,8 @@ public class Users extends Fragment implements View.OnClickListener{
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Loading Error: " + error.getMessage());
-                Toast.makeText(getActivity().getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        error.getMessage(), Toast.LENGTH_LONG).show();
                 hideDialog();
             }
 
@@ -705,8 +705,8 @@ public class Users extends Fragment implements View.OnClickListener{
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Loading Error: " + error.getMessage());
-                Toast.makeText(getActivity().getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        error.getMessage(), Toast.LENGTH_LONG).show();
                 hideDialog();
             }
 
@@ -782,8 +782,8 @@ public class Users extends Fragment implements View.OnClickListener{
 
                         // Error occurred in registration. Get the error
                         // message
-                        Toast.makeText(getActivity().getApplicationContext(),
-                                "error loading", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getActivity().getApplicationContext(),
+//                                "error loading", Toast.LENGTH_LONG).show();
 
                     }
                 } catch (JSONException e) {
@@ -797,8 +797,8 @@ public class Users extends Fragment implements View.OnClickListener{
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Loading Error: " + error.getMessage());
-                Toast.makeText(getActivity().getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        error.getMessage(), Toast.LENGTH_LONG).show();
                 hideDialog();
             }
 
@@ -852,8 +852,8 @@ public class Users extends Fragment implements View.OnClickListener{
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Loading Error: " + error.getMessage());
-                Toast.makeText(getActivity().getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        error.getMessage(), Toast.LENGTH_LONG).show();
                 hideDialog();
             }
 
