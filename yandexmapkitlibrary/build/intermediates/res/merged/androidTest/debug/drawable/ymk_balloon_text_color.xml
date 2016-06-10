@@ -5,4 +5,4 @@
     <item android:state_focused="true" android:state_pressed="true" android:color="#FF999999"/>
     <item android:state_focused="false" android:state_pressed="true" android:color="#FF999999"/>
     <item android:color="#FFFFFFFF"/>
-</selector><!-- From: file:/D:/Android/AndroidStudioProjects/YesFinal/yandexmapkitlibrary/src/main/res/drawable/ymk_balloon_text_color.xml --><!-- From: file:/D:/Android/AndroidStudioProjects/YesFinal/yandexmapkitlibrary/build/intermediates/bundles/debug/res/drawable/ymk_balloon_text_color.xml -->
+</selector><!-- From: file:/E:/Downloads/YesFinal/yandexmapkitlibrary/src/main/res/drawable/ymk_balloon_text_color.xml --><!-- From: file:/E:/Downloads/YesFinal/yandexmapkitlibrary/build/intermediates/bundles/debug/res/drawable/ymk_balloon_text_color.xml -->

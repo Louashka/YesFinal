@@ -171,6 +171,9 @@ public class UsersSearchAdapter extends BaseExpandableListAdapter {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 userGlobalClass.setAgeTo(position);
+                if (userGlobalClass.getAgeTo() < userGlobalClass.getAgeFrom()){
+                    holder.editTextAgeFrom.setSelection(userGlobalClass.getAgeTo());
+                }
             }
 
             @Override
