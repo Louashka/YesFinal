@@ -12,13 +12,12 @@
         android:id="@+id/search_view_main"
         android:searchIcon="@drawable/ic_search_main"
         android:voiceIcon="@drawable/ic_search_main_mic"
-        android:queryHint="@string/search_hint"
         android:layout_centerHorizontal="true"
         android:clickable="true"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
-       android:focusable="true" />
+        android:focusable="true" />
     <!--    android:background="@drawable/search_border"-->
 </FrameLayout>

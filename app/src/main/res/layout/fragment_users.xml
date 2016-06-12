@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:queryHint="Поиск людей"
             android:id="@+id/searchViewUsers"
+            android:focusable="true"
             android:searchIcon="@drawable/ic_search"
             android:voiceIcon="@drawable/ic_search_mic"
             android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"

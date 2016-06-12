@@ -17,7 +17,7 @@
         <fragment android:name="com.tataev.appyes.fragments.SearchFragment"
             android:layout_width="match_parent"
             android:layout_height="51dp"
-
+            android:background="@drawable/search_border"
             tools:layout="@layout/fragment_search"
             android:id="@+id/fragserch"  />
 

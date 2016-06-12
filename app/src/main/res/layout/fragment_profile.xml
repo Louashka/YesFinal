@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/profile_background_middle"
             android:gravity="center_vertical"
-            android:layout_weight="0.35">
+            android:layout_weight="0.40">
 
             <EditText
                 android:id="@+id/editProfLogin"

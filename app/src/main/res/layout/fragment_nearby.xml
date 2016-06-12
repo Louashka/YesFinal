@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/searchViewNearby"
+        android:focusable="true"
         android:searchIcon="@drawable/ic_search"
         android:voiceIcon="@drawable/ic_search_mic"
         android:background="@drawable/view_border"
