@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tataev.appyes.R;
@@ -21,8 +22,12 @@ public class CategoriesAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private LayoutInflater l_InflaterUA;
-    private List<String> listDataHeader = new ArrayList<String>();;
+    private List<String> listDataHeader = new ArrayList<String>();
     private HashMap<String, List<String>> listDataChild = new HashMap<String, List<String>>();
+
+    Integer[] imgId = {R.drawable.ic_man_cloth,R.drawable.ic_woman_cl,R.drawable.ic_children_cl,R.drawable.ic_mobiles_acce,
+    R.drawable.ic_electronics,R.drawable.ic_instrum_matrial,R.drawable.ic_hom_garden,R.drawable.ic_kitchen_black_24dp,
+    R.drawable.ic_home_tech};
 
     public CategoriesAdapter (Context context){
         this.context = context;
@@ -38,6 +43,7 @@ public class CategoriesAdapter extends BaseExpandableListAdapter {
         listDataChild.put(listDataHeader.get(7), Arrays.asList(context.getResources().getStringArray(R.array.kitchenEquipmentArray)));
         listDataChild.put(listDataHeader.get(8), Arrays.asList(context.getResources().getStringArray(R.array.technicsForHouseArray)));
 
+        this.imgId = imgId;
       /*  for (int i = 3; i < listDataHeader.size(); i++){
             listDataChild.put(listDataHeader.get(i), Arrays.asList(context.getResources().getStringArray(R.array.otherCloth)));
         }*/
@@ -60,6 +66,10 @@ public class CategoriesAdapter extends BaseExpandableListAdapter {
 
         return listDataHeader.get(groupPosition);
     }
+public Object getImages(int groupPosition){
+    return imgId[groupPosition];
+}
+
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
@@ -89,8 +99,17 @@ public class CategoriesAdapter extends BaseExpandableListAdapter {
         if (convertView == null) {
             convertView = l_InflaterUA.inflate(R.layout.categories_group_adapter, null);
         }
+        final ImageView ivg = (ImageView)convertView.findViewById(R.id.ivg);
         final TextView tv = (TextView)convertView.findViewById(R.id.categories_group_item);
-        tv.setText((String)getGroup(groupPosition));
+        String groupName = getGroup(groupPosition).toString();
+
+
+
+       // tv.setText((String) getGroup(groupPosition));
+        tv.setText(groupName);
+        ivg.setImageResource((Integer) getImages(groupPosition));
+
+
         return convertView;
     }
 

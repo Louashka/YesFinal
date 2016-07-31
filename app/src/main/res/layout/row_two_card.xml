@@ -68,7 +68,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/textViewTimeCard"
         android:textColor="@android:color/white"
-        android:background="@android:color/holo_green_dark"
+        android:background="@color/green"
         android:layout_below="@+id/textViewTitleCard"
         android:layout_marginLeft="270dp" />
 

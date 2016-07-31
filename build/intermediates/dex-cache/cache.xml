@@ -2,11 +2,74 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\lou\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.5\e7501a1b34325abb00d17dde96150604a0658b54\httpcore-4.4.5.jar"
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\YesFinal\pulltorefresh-and-loadmore\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bfb7abf583831dfe90167d223523b0b264c3e855">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\classes-a2b2b5c1d11f280ed7451cb71a284afb17cef839.jar" />
+    </item>
+    <item
+        jar="C:\Users\Техносклад Аргун\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.5.2\22b4c53dd9b6761024258de8f9240c3dce6ea368\httpmime-4.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="22b4c53dd9b6761024258de8f9240c3dce6ea368">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\httpmime-4.5.2-2d1b7a1affb69f57800e96bcbb1d7c5467f09cd5.jar" />
+    </item>
+    <item
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\classes-e55c39c901033fd57dbc8ccc51d29ca95835c0c4.jar" />
+    </item>
+    <item
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\classes-9c686fb4e80b2d5412b3be4d2f5752f9eb0b4b47.jar" />
+    </item>
+    <item
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\YesFinal\yandexmapkitlibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7d99cd7c24c13a1c84cc0ccbc9def2dec39f0798">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\classes-fe3a31d2c8f5c82a581a422e139b52c421c0306d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Техносклад Аргун\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.5\e7501a1b34325abb00d17dde96150604a0658b54\httpcore-4.4.5.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="e7501a1b34325abb00d17dde96150604a0658b54">
-        <dex dex="E:\Downloads\YesFinal\app\build\intermediates\pre-dexed\debug\httpcore-4.4.5-babccd59fe81cc49c55d9ab02a85983a49179be6.jar" />
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\httpcore-4.4.5-996dff29d39905623209be29aef9ff6b5e9ea0bf.jar" />
+    </item>
+    <item
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\classes-78b5f3847e23dcd42f9761207ac940b851e335a5.jar" />
+    </item>
+    <item
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-d2113ef800a475c378675abf3ddf9c6c7b0c0f64.jar" />
+    </item>
+    <item
+        jar="C:\Android\AndroidSdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-de6620883dfccceef27e362bf53965e9f97a04dc.jar" />
+    </item>
+    <item
+        jar="C:\Android\YesFinal\app\build\intermediates\exploded-aar\YesFinal\yandexmapkitlibrary\unspecified\jars\libs\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fafc78681412f85865274d9163d1eab0ef61866d">
+        <dex dex="C:\Android\YesFinal\app\build\intermediates\pre-dexed\debug\classes-b60336e3f9d64bd8f30cda9f34405448583f7dc3.jar" />
     </item>
 
 </items>

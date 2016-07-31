@@ -164,7 +164,12 @@
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerFolter" />
+            android:id="@+id/spinnerFolter"
+            android:layout_alignBottom="@+id/imageCard"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/imageCard"
+            android:layout_toLeftOf="@+id/imageCard" />
         <!--   android:entries="@array/category_spinner_array" -->
 
         <ImageView
@@ -172,22 +177,27 @@
             android:layout_height="30dp"
             android:id="@+id/imageCard"
             android:src="@drawable/card"
-            android:layout_toRightOf="@+id/spinnerFolter"
-            android:layout_marginLeft="15dp" />
+
+            android:layout_toLeftOf="@+id/imageGrid"
+            android:layout_alignParentTop="true" />
 
         <ImageView
             android:layout_width="29dp"
             android:layout_height="29dp"
             android:id="@+id/imageGrid"
-            android:layout_toRightOf="@+id/imageCard"
-            android:src="@drawable/grid" />
+            android:src="@drawable/grid"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageList"
+            android:layout_toStartOf="@+id/imageList" />
 
         <ImageView
             android:layout_width="29dp"
             android:layout_height="27dp"
             android:id="@+id/imageList"
             android:src="@drawable/list"
-            android:layout_toRightOf="@+id/imageGrid"/>
+android:layout_marginRight="-10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
 
     </RelativeLayout>
@@ -198,8 +208,8 @@
         android:id="@+id/gridView"
         android:layout_below="@+id/frameLayout"
         android:background="@color/menu_tabs"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp" />
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" />
 
     <ListView
         android:id="@+id/listView"
@@ -207,19 +217,19 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/frameLayout"
         android:background="@color/menu_tabs"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp">
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
     </ListView>
     <ListView
         android:id="@+id/listViewCard"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:dividerHeight="5dip"
 
         android:horizontalSpacing="15dp"
         android:verticalSpacing="15dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
         android:layout_below="@+id/frameLayout"
         android:background="@color/menu_tabs" />
 
