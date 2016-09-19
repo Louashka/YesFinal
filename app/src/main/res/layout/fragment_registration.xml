@@ -44,7 +44,7 @@
                 android:layout_marginRight="40dp"
                 android:gravity="center_horizontal"
                 android:singleLine="true"
-                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?.,'/\~&lt;&amp;&gt;&quot;"
                 android:textColorHint="@color/profile_text"/>
 
             <EditText
@@ -62,7 +62,7 @@
                 android:layout_marginRight="40dp"
                 android:gravity="center_horizontal"
                 android:singleLine="true"
-                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?.,'/\~&lt;&amp;&gt;&quot;"
                 android:textColorHint="@color/profile_text"/>
 
             <EditText
@@ -80,7 +80,7 @@
                 android:layout_marginRight="40dp"
                 android:gravity="center_horizontal"
                 android:singleLine="true"
-                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?.,'/\~&lt;&amp;&gt;&quot;"
                 android:textColorHint="@color/profile_text"/>
 
             <EditText
@@ -98,7 +98,7 @@
                 android:layout_marginRight="40dp"
                 android:gravity="center_horizontal"
                 android:singleLine="true"
-                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'/\~&lt;&amp;&gt;&quot;"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*()-=+_№;:?'.,/\~&lt;&amp;&gt;&quot;"
                 android:textColorHint="@color/profile_text"/>
 
             <View
